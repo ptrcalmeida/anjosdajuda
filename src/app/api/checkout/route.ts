@@ -14,8 +14,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Valor mínimo: R$10" }, { status: 400 });
     }
 
-    const rawUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
-    const baseUrl = rawUrl.startsWith("http") ? rawUrl : `https://${rawUrl}`;
+    const baseUrl = new URL(request.url).origin;
 
     const session = await stripe.checkout.sessions.create({
       mode: recurring ? "subscription" : "payment",
