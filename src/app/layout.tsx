@@ -75,12 +75,25 @@ const organizationSchema = {
     "https://www.youtube.com/@anjosdajuda7134"
   ],
   "taxID": "20.699.396/0001-14",
+  "nonprofitStatus": "Associação",
+  "areaServed": {
+    "@type": "City",
+    "name": "Arraial d'Ajuda",
+    "containedInPlace": {
+      "@type": "State",
+      "name": "Bahia",
+      "containedInPlace": { "@type": "Country", "name": "Brazil" }
+    }
+  },
   "knowsAbout": [
     "castração de animais",
+    "esterilização de cães e gatos",
     "adoção responsável",
     "bem-estar animal",
     "saúde pública veterinária",
-    "controle populacional de cães e gatos"
+    "controle populacional de cães e gatos",
+    "resgate de animais abandonados",
+    "educação para guarda responsável"
   ]
 };
 

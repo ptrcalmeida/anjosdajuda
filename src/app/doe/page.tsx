@@ -9,9 +9,27 @@ export const metadata: Metadata = {
     "Sua doação financia castração, alimentação e resgate de emergência em Arraial d'Ajuda. Cartão nacional e internacional, PIX e doação recorrente.",
 };
 
+const donateSchema = {
+  "@context": "https://schema.org",
+  "@type": "DonateAction",
+  "name": "Doe para a Anjos d'Ajuda",
+  "description": "Apoie a castração, resgate e adoção responsável de cães e gatos em Arraial d'Ajuda, Bahia.",
+  "url": "https://anjosdajuda.org/doe",
+  "recipient": {
+    "@type": "NGO",
+    "name": "Anjos d'Ajuda",
+    "url": "https://anjosdajuda.org",
+    "taxID": "20.699.396/0001-14"
+  }
+};
+
 export default function DoePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(donateSchema) }}
+      />
       {/* Emotional header + widget */}
       <SectionWrapper innerClassName="max-w-lg">
         <div className="text-center mb-8">

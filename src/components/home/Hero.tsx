@@ -28,6 +28,7 @@ export default function Hero() {
         >
           Castrar. Educar.<br />
           <span className="text-[#C084FC]">Resgatar.</span>
+          <span className="sr-only"> — ONG de proteção animal em Arraial d&apos;Ajuda, Bahia</span>
         </h1>
 
         <p
