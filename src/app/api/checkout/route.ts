@@ -7,7 +7,7 @@ export async function POST(request: NextRequest) {
     if (!key) {
       return NextResponse.json({ error: "STRIPE_SECRET_KEY not set" }, { status: 500 });
     }
-    const stripe = new Stripe(key, { maxNetworkRetries: 0, timeout: 8000 });
+    const stripe = new Stripe(key.trim(), { maxNetworkRetries: 0, timeout: 8000 });
     const { amount, recurring } = await request.json();
 
     if (!amount || amount < 10) {
@@ -43,7 +43,8 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ url: session.url });
   } catch (error) {
     const message = error instanceof Error ? error.message : "Erro desconhecido";
-    console.error("Stripe checkout error:", message);
-    return NextResponse.json({ error: message }, { status: 500 });
+    const type = (error as { type?: string })?.type ?? "unknown";
+    console.error("Stripe checkout error:", type, message);
+    return NextResponse.json({ error: message, type }, { status: 500 });
   }
 }
