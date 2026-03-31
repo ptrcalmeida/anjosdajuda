@@ -18,7 +18,9 @@ export async function POST(request: NextRequest) {
 
     const session = await stripe.checkout.sessions.create({
       mode: recurring ? "subscription" : "payment",
-      payment_method_types: ["card"],
+      // Subscriptions: card only (PIX/wallets don't support recurring)
+      // One-time: let Stripe Dashboard control which methods appear (PIX, Google Pay, Apple Pay, etc.)
+      ...(recurring && { payment_method_types: ["card"] }),
       line_items: [
         {
           price_data: {
