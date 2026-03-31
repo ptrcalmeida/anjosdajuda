@@ -20,20 +20,23 @@ export default function SobrePage() {
   return (
     <>
       {/* Hero image */}
-      <section className="relative h-[60vh] min-h-[400px] bg-[#1A103C]">
+      <section className="relative h-[60vh] min-h-[400px] overflow-hidden bg-[#1A103C]">
         <Image
           src="/story/sobre-hero.jpg"
           alt="Voluntário da Anjos d'Ajuda rodeado por cães resgatados em Arraial d'Ajuda, Bahia"
           fill
-          className="object-cover object-center opacity-60"
+          className="object-cover object-center"
           priority
         />
-        <div className="relative z-10 h-full flex flex-col justify-end px-4 pb-12 max-w-6xl mx-auto">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#C084FC] mb-3">
-            Desde 2013
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#1A103C]/60 via-[#1A103C]/55 to-[#1A103C]/80" />
+        <div className="absolute inset-0 flex flex-col justify-end px-4 pb-14 max-w-6xl mx-auto z-10">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#C084FC] mb-4">
+            Arraial d&apos;Ajuda, Bahia · Desde 2013
           </p>
-          <h1 className="text-4xl md:text-6xl font-black text-white leading-tight max-w-2xl">
-            ONG Anjos d&apos;Ajuda — 13 anos protegendo animais em Arraial d&apos;Ajuda, Bahia
+          <h1 className="text-4xl md:text-6xl font-black text-white leading-tight max-w-xl"
+            style={{ textShadow: "0 2px 16px rgba(0,0,0,0.4)" }}>
+            13 anos protegendo animais em Arraial d&apos;Ajuda
           </h1>
         </div>
       </section>
