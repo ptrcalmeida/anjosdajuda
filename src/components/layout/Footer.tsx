@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Heart, MapPin, Phone, Mail } from "lucide-react";
+import Image from "next/image";
+import { MapPin, Phone, Mail } from "lucide-react";
 
 function InstagramIcon({ className }: { className?: string }) {
   return (
@@ -35,9 +36,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 font-black text-xl mb-3">
-              <Heart className="w-5 h-5 text-[#FF6B4A] fill-[#FF6B4A]" />
-              Anjos d&apos;Ajuda
+            <div className="mb-3">
+              <Image src="/logo.jpg" alt="Anjos d'Ajuda" width={64} height={64} className="rounded-lg bg-white p-1" />
             </div>
             <p className="text-white/60 text-sm leading-relaxed mb-6 max-w-xs">
               Salvando Vidas, Uma Pata de Cada Vez. Resgatamos, esterilizamos e encontramos lares para animais abandonados em Arraial d&apos;Ajuda, Bahia.

@@ -1,20 +1,149 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Quem Somos — Anjos d'Ajuda",
   description:
-    "Conheça a história dos Anjos da Ajuda, nossa missão, valores e impacto em Arraial d'Ajuda, Bahia.",
+    "A Anjos d'Ajuda é uma ONG sem fins lucrativos fundada em 2013 em Arraial d'Ajuda, Bahia. Mais de 13 anos castrando, resgatando e encontrando lares para cães e gatos abandonados no Sul da Bahia.",
 };
+
+const stats = [
+  { number: "13", label: "Anos de atuação" },
+  { number: "10.000+", label: "Animais atendidos" },
+  { number: "700+", label: "Adotados" },
+  { number: "30+", label: "Voluntários" },
+];
 
 export default function SobrePage() {
   return (
-    <section className="py-20 px-4">
-      <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-black text-[#1A103C] mb-6">
-          Quem Somos
-        </h1>
-        <p className="text-lg text-[#7C6B8E]">Em breve — conteúdo desta página está sendo preparado.</p>
-      </div>
-    </section>
+    <>
+      {/* Hero image */}
+      <section className="relative h-[60vh] min-h-[400px] bg-[#1A103C]">
+        <Image
+          src="/story/sobre-hero.jpg"
+          alt="Voluntário da Anjos d'Ajuda rodeado por cães resgatados em Arraial d'Ajuda, Bahia"
+          fill
+          className="object-cover object-center opacity-60"
+          priority
+        />
+        <div className="relative z-10 h-full flex flex-col justify-end px-4 pb-12 max-w-6xl mx-auto">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#C084FC] mb-3">
+            Desde 2013
+          </p>
+          <h1 className="text-4xl md:text-6xl font-black text-white leading-tight max-w-2xl">
+            Reduzindo o abandono animal em Arraial d&apos;Ajuda
+          </h1>
+        </div>
+      </section>
+
+      {/* Lead — quem somos */}
+      <section className="bg-white py-16 px-4">
+        <div className="max-w-3xl mx-auto">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#7E22CE] mb-4">
+            Nossa missão
+          </p>
+          <p className="text-xl md:text-2xl text-[#1A103C] font-semibold leading-relaxed mb-6">
+            A Anjos d&apos;Ajuda é uma ONG sem fins lucrativos fundada em 2013
+            em Arraial d&apos;Ajuda, Bahia.
+          </p>
+          <p className="text-lg text-[#7C6B8E] leading-relaxed mb-6">
+            Em mais de 13 anos de atuação, já atendemos mais de 10.000 animais
+            por meio de castração e esterilização, resgate emergencial,
+            tratamento veterinário e adoção responsável. Funcionamos 100% com
+            doações e trabalho voluntário — sem nenhum apoio do poder público.
+          </p>
+          <p className="text-lg text-[#7C6B8E] leading-relaxed">
+            Nossa atuação vai além do resgate. O foco está na causa: castrar,
+            educar e conscientizar a comunidade sobre guarda responsável e saúde
+            pública. Cada animal castrado evita dezenas de abandonos futuros.
+            Cada criança educada quebra o ciclo onde leis e multas falham.
+          </p>
+        </div>
+      </section>
+
+      {/* Stats */}
+      <section className="bg-[#FAF8FF] py-14 px-4 border-y border-[#E9D5FF]">
+        <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+          {stats.map((s) => (
+            <div key={s.label} className="text-center">
+              <p className="text-5xl md:text-6xl font-black text-[#1A103C] leading-none mb-2">
+                {s.number}
+              </p>
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#7C6B8E]">
+                {s.label}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* O que fazemos */}
+      <section className="bg-white py-16 px-4">
+        <div className="max-w-3xl mx-auto">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#7E22CE] mb-4">
+            O que fazemos
+          </p>
+          <h2 className="text-3xl font-black text-[#1A103C] mb-10">
+            Três frentes. Um objetivo.
+          </h2>
+          <div className="flex flex-col gap-8">
+            {[
+              {
+                title: "Castração e esterilização",
+                body: "Realizamos mutirões regulares com veterinários voluntários para castrar cães e gatos de rua e de famílias carentes. É a intervenção mais eficaz e duradoura no controle do abandono animal em Arraial d'Ajuda e região.",
+              },
+              {
+                title: "Resgate e adoção responsável",
+                body: "Em situações extremas — por ausência de suporte público — resgatamos animais em sofrimento grave, cobrimos tratamentos veterinários e buscamos adotantes responsáveis em todo o Brasil.",
+              },
+              {
+                title: "Educação e conscientização",
+                body: "Trabalhamos com escolas e comunidades para formar guardiões responsáveis. Uma criança que aprende a respeitar animais cresce sem abandonar — mudando o comportamento antes que o problema aconteça.",
+              },
+            ].map((item, i) => (
+              <div key={item.title} className="flex gap-6 items-start">
+                <span className="text-4xl font-black text-[#E9D5FF] leading-none shrink-0 w-8">
+                  {i + 1}
+                </span>
+                <div>
+                  <h3 className="font-black text-[#1A103C] text-lg mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-[#7C6B8E] leading-relaxed">{item.body}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA dark */}
+      <section className="bg-[#1A103C] py-16 px-4">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl font-black text-white mb-4">
+            Faça parte desta história
+          </h2>
+          <p className="text-white/60 leading-relaxed mb-8 max-w-xl mx-auto">
+            A Anjos d&apos;Ajuda existe porque pessoas acreditam que é possível
+            fazer diferença. Doe, adote ou voluntarie-se — cada gesto conta.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <Link
+              href="/doe"
+              className="inline-flex items-center justify-center rounded-lg px-8 py-3 font-bold bg-[#FF6B4A] text-white hover:bg-[#E55530] transition-colors"
+            >
+              Fazer uma doação
+            </Link>
+            <Link
+              href="/adote"
+              className="inline-flex items-center justify-center rounded-lg px-8 py-3 font-bold border-2 border-[#C084FC] text-[#C084FC] hover:bg-[#C084FC] hover:text-[#1A103C] transition-colors"
+            >
+              Ver animais para adoção
+            </Link>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

@@ -15,13 +15,61 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: "Anjos d'Ajuda — Proteção e Adoção de Animais em Arraial d'Ajuda",
   description:
-    "Anjos da Ajuda resgata, esteriliza e encontra lares para animais abandonados em Arraial d'Ajuda, Bahia. Doe, adote ou voluntarie-se.",
+    "ONG sem fins lucrativos em Arraial d'Ajuda (BA). Desde 2013 castramos cães e gatos, resgatamos animais abandonados e promovemos adoção responsável no Sul da Bahia. Doe ou adote.",
   metadataBase: new URL("https://anjosdajuda.org"),
   openGraph: {
     type: "website",
     locale: "pt_BR",
     siteName: "Anjos d'Ajuda",
   },
+  keywords: [
+    "ONG animais Arraial d'Ajuda",
+    "castração de cães e gatos Bahia",
+    "adoção de animais Arraial d'Ajuda",
+    "animais abandonados Sul da Bahia",
+    "ONG sem fins lucrativos Bahia",
+    "resgate animal Arraial d'Ajuda",
+    "adoção responsável Bahia",
+  ],
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "NGO",
+  "name": "Anjos d'Ajuda",
+  "alternateName": "Anjos da Ajuda",
+  "url": "https://anjosdajuda.org",
+  "logo": "https://anjosdajuda.org/logo.jpg",
+  "foundingDate": "2013",
+  "description": "ONG sem fins lucrativos fundada em 2013 em Arraial d'Ajuda, Bahia. Castração, resgate e adoção responsável de cães e gatos no Sul da Bahia.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Mucugê, 333, Shopping d'Ajuda",
+    "addressLocality": "Arraial d'Ajuda",
+    "addressRegion": "BA",
+    "postalCode": "45816-000",
+    "addressCountry": "BR"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+55-73-99921-4880",
+    "email": "anjosdajuda@gmail.com",
+    "contactType": "customer service",
+    "availableLanguage": "Portuguese"
+  },
+  "sameAs": [
+    "https://www.instagram.com/anjosdajuda_arraial/",
+    "https://www.facebook.com/anjosdajudaba/",
+    "https://www.youtube.com/@anjosdajuda7134"
+  ],
+  "taxID": "20.699.396/0001-14",
+  "knowsAbout": [
+    "castração de animais",
+    "adoção responsável",
+    "bem-estar animal",
+    "saúde pública veterinária",
+    "controle populacional de cães e gatos"
+  ]
 };
 
 export default function RootLayout({
@@ -31,6 +79,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={`${jakarta.variable} h-full`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+      </head>
       <body className="min-h-full flex flex-col bg-[#FAF8FF] text-[#2D1A4A] antialiased">
         <Header />
         <main className="flex-1">{children}</main>

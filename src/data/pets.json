@@ -1,11 +1,11 @@
 [
   {
-    "id": "cara",
-    "name": "Cara",
+    "id": "barao",
+    "name": "Barão",
     "species": "Cão",
     "gender": "Macho",
     "age": null,
-    "description": "Cara chegou das ruas de Arraial d'Ajuda com um sorriso que não engana ninguém. Dócil, castrado e cheio de alegria, ele faz amizade em segundos.",
+    "description": "Barão chegou das ruas de Arraial d'Ajuda com um sorriso que não engana ninguém. Dócil, castrado e cheio de alegria, ele faz amizade em segundos.",
     "photo": "/pets/cara.jpg",
     "status": "available",
     "featured": true
@@ -304,6 +304,94 @@
     "age": null,
     "description": "Branca como coco fresco, delicada e ainda descobrindo o mundo. Coco veio das ruas junto com seu irmão e já está pronta pra um lar só dela. Castrada.",
     "photo": "/pets/deck.jpg",
+    "status": "available",
+    "featured": false
+  },
+  {
+    "id": "fofao",
+    "name": "Fofão",
+    "species": "Cão",
+    "gender": "Macho",
+    "age": null,
+    "description": "Fofão é exatamente o que o nome promete — um amontoado de carinho com patas. Grandão, branco e cheio de pelo, ele conquista todo mundo que cruza no caminho.",
+    "photo": "/pets/fofao.jpg",
+    "status": "available",
+    "featured": false
+  },
+  {
+    "id": "teodoro",
+    "name": "Teodoro",
+    "species": "Cão",
+    "gender": "Macho",
+    "age": null,
+    "description": "Teodoro tem aquele olhar de quem já viu muita coisa e ainda assim escolhe confiar. Pelagem dourada com toque de prata, tranquilo e gentil — merece um lar à altura da sua história.",
+    "photo": "/pets/teodoro.jpg",
+    "status": "available",
+    "featured": false
+  },
+  {
+    "id": "farofa",
+    "name": "Farofa",
+    "species": "Cão",
+    "gender": "Macho",
+    "age": null,
+    "description": "Farofa é daqueles que ficam de olho em tudo, sempre curioso e pronto pra explorar. Pelagem areia, porte médio e energia de sobra — espera há tempo por uma família.",
+    "photo": "/pets/farofa.jpg",
+    "status": "available",
+    "featured": false
+  },
+  {
+    "id": "bill",
+    "name": "Bill",
+    "species": "Cão",
+    "gender": "Macho",
+    "age": null,
+    "description": "Bill é intenso e expressivo — nunca passa despercebido. Pelagem escura e porte forte, cheio de personalidade. Com a família certa, vai ser presença garantida.",
+    "photo": "/pets/bill-capitao.jpg",
+    "status": "available",
+    "featured": false
+  },
+  {
+    "id": "capitao",
+    "name": "Capitão",
+    "species": "Cão",
+    "gender": "Macho",
+    "age": null,
+    "description": "Capitão tem o rabo sempre balançando e um jeito leve de ser feliz. Branco com manchas, porte médio — daquele tipo que faz amizade com todo mundo no mesmo dia.",
+    "photo": "/pets/bill-capitao.jpg",
+    "status": "available",
+    "featured": false
+  },
+  {
+    "id": "caramelo",
+    "name": "Caramelo",
+    "species": "Cão",
+    "gender": "Fêmea",
+    "age": null,
+    "description": "Caramelo é muito dócil — simples assim. Pelagem dourada, olhar manso e temperamento que faz qualquer casa parecer mais leve. Pronta para encontrar seu lar.",
+    "photo": "/pets/caramelo.jpg",
+    "status": "available",
+    "featured": false
+  },
+  {
+    "id": "forte",
+    "name": "Forte",
+    "species": "Cão",
+    "gender": "Macho",
+    "age": 1,
+    "description": "Forte chegou em maio com ferimentos graves e tomado por parasitas. Sobreviveu — e o nome ficou. Com 1 ano, preto com peito branco, ele é prova de que força de vontade tem forma.",
+    "photo": "/pets/forte.jpg",
+    "status": "available",
+    "featured": true
+  },
+  {
+    "id": "mel",
+    "name": "Mel",
+    "species": "Cão",
+    "gender": "Fêmea",
+    "age": null,
+    "description": "Mel vivia em um lixão — mas nunca perdeu a doçura. O nome diz tudo. Ela merece um lar que esteja à altura do amor que tem pra dar.",
+    "photo": "/pets/mel.jpg",
     "status": "available",
     "featured": false
   }

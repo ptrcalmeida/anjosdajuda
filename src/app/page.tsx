@@ -10,11 +10,11 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <Stats />
       <MissionPillars />
       <ImpactChain />
       <FeaturedPets />
       <RescueHighlight />
-      <Stats />
       <FinalCTA />
     </>
   );

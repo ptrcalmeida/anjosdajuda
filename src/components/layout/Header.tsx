@@ -1,14 +1,15 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
-import { Menu, X, Heart } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const NAV_LINKS = [
   { href: "/sobre", label: "Quem Somos" },
   { href: "/adote", label: "Adote" },
   { href: "/voluntarie", label: "Voluntarie-se" },
-  { href: "/contato", label: "Contato" },
+  { href: "mailto:anjosdajuda@gmail.com", label: "Contato" },
 ];
 
 export default function Header() {
@@ -18,9 +19,8 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white border-b border-[#E9D5FF]">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 font-black text-xl text-[#1A103C] hover:text-[#7E22CE] transition-colors">
-          <Heart className="w-5 h-5 text-[#FF6B4A] fill-[#FF6B4A]" />
-          Anjos d&apos;Ajuda
+        <Link href="/" aria-label="Anjos d'Ajuda — página inicial">
+          <Image src="/logo.jpg" alt="Anjos d'Ajuda" width={48} height={48} className="rounded-md" priority />
         </Link>
 
         {/* Desktop nav */}
