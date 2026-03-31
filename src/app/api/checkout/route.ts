@@ -14,7 +14,7 @@ export async function POST(request: NextRequest) {
 
     const session = await stripe.checkout.sessions.create({
       mode: recurring ? "subscription" : "payment",
-      payment_method_types: recurring ? ["card"] : ["card", "pix"],
+      payment_method_types: ["card"],
       line_items: [
         {
           price_data: {
@@ -24,7 +24,6 @@ export async function POST(request: NextRequest) {
               description: recurring
                 ? "Doação mensal recorrente para castração e proteção animal em Arraial d'Ajuda, Bahia."
                 : "Doação para castração, resgate e educação animal em Arraial d'Ajuda, Bahia.",
-              images: [`${baseUrl}/logo.jpg`],
             },
             unit_amount: Math.round(amount * 100),
             ...(recurring && { recurring: { interval: "month" } }),
@@ -35,17 +34,12 @@ export async function POST(request: NextRequest) {
       success_url: `${baseUrl}/doe/sucesso?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${baseUrl}/doe`,
       locale: "pt-BR",
-      billing_address_collection: "auto",
-      custom_text: {
-        submit: {
-          message: "Seu apoio financia castração, alimentação e resgate de animais em Arraial d'Ajuda.",
-        },
-      },
     });
 
     return NextResponse.json({ url: session.url });
   } catch (error) {
-    console.error("Stripe checkout error:", error);
-    return NextResponse.json({ error: "Erro ao criar sessão de pagamento." }, { status: 500 });
+    const message = error instanceof Error ? error.message : "Erro desconhecido";
+    console.error("Stripe checkout error:", message);
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }
