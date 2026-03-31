@@ -15,7 +15,7 @@ export default function Hero() {
       />
 
       {/* Overlay gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#1A103C]/75 via-[#1A103C]/65 to-[#1A103C]/85" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#1A103C]/70 via-[#1A103C]/80 to-[#1A103C]/95" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
         <p className="text-sm font-semibold uppercase tracking-widest text-[#C084FC] mb-6">

@@ -29,7 +29,7 @@ export default function SobrePage() {
           priority
         />
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#1A103C]/60 via-[#1A103C]/55 to-[#1A103C]/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#1A103C]/30 via-[#1A103C]/60 to-[#1A103C]/95" />
         <div className="absolute inset-0 flex flex-col justify-end px-4 pb-14 max-w-6xl mx-auto z-10">
           <p className="text-xs font-semibold uppercase tracking-widest text-[#C084FC] mb-4">
             Arraial d&apos;Ajuda, Bahia · Desde 2013
