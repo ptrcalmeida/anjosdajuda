@@ -2,12 +2,7 @@ import Link from "next/link";
 
 export default function FinalCTA() {
   return (
-    <section
-      className="py-28 px-4 text-center"
-      style={{
-        background: "linear-gradient(135deg, #6B21A8 0%, #1A103C 100%)",
-      }}
-    >
+    <section className="bg-[#1A103C] py-28 px-4 text-center">
       <div className="max-w-2xl mx-auto">
         <p className="text-xs font-semibold uppercase tracking-widest text-[#C084FC]/70 mb-4">
           Funcionamos 100% por doações

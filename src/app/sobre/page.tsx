@@ -32,7 +32,7 @@ export default function SobrePage() {
             Desde 2013
           </p>
           <h1 className="text-4xl md:text-6xl font-black text-white leading-tight max-w-2xl">
-            Reduzindo o abandono animal em Arraial d&apos;Ajuda
+            ONG Anjos d&apos;Ajuda — 13 anos protegendo animais em Arraial d&apos;Ajuda, Bahia
           </h1>
         </div>
       </section>
@@ -62,8 +62,42 @@ export default function SobrePage() {
         </div>
       </section>
 
+      {/* Founder */}
+      <section className="bg-[#FAF8FF] py-16 px-4 border-y border-[#E9D5FF]">
+        <div className="max-w-3xl mx-auto">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#7E22CE] mb-6">
+            Quem fundou
+          </p>
+          <div className="flex flex-col sm:flex-row items-start gap-8">
+            {/* Founder photo placeholder — replace src when image is provided */}
+            <div className="w-28 h-28 rounded-full bg-[#E9D5FF] shrink-0 overflow-hidden flex items-center justify-center">
+              <span className="text-[#7E22CE] text-xs font-semibold text-center px-2">
+                Foto em breve
+              </span>
+            </div>
+            <div>
+              <h3 className="text-xl font-black text-[#1A103C] mb-1">
+                {/* Replace with founder name */}
+                Fundadora
+              </h3>
+              <p className="text-sm text-[#7E22CE] font-semibold mb-3">
+                Fundadora e diretora · Arraial d&apos;Ajuda, Bahia
+              </p>
+              <p className="text-[#7C6B8E] leading-relaxed">
+                {/* Replace with founder story */}
+                A Anjos d&apos;Ajuda nasceu em 2013 da convicção de que o
+                abandono animal é um problema solucionável — e que a solução
+                está nas mãos da própria comunidade. Em mais de uma década,
+                essa visão se traduziu em mais de 10.000 animais atendidos,
+                inteiramente por meio de doações e voluntariado.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Stats */}
-      <section className="bg-[#FAF8FF] py-14 px-4 border-y border-[#E9D5FF]">
+      <section className="bg-white py-14 px-4 border-b border-[#E9D5FF]">
         <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((s) => (
             <div key={s.label} className="text-center">

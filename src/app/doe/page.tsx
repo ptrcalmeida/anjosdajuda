@@ -72,6 +72,23 @@ export default function DoePage() {
         </div>
       </section>
 
+      {/* Urgency banner — update the numbers monthly */}
+      <section className="bg-[#1A103C] py-6 px-4">
+        <div className="max-w-3xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#C084FC] mb-1">
+              Necessidade do mês — Abril 2026
+            </p>
+            <p className="text-white font-black text-lg leading-tight">
+              Próximo mutirão de castração precisa de R$5.700
+            </p>
+          </div>
+          <p className="text-white/60 text-sm shrink-0">
+            Cada R$190 = 1 animal castrado
+          </p>
+        </div>
+      </section>
+
       {/* Donation widget */}
       <SectionWrapper innerClassName="max-w-lg">
         <div className="text-center mb-8">
@@ -87,6 +104,9 @@ export default function DoePage() {
           </p>
         </div>
         <DonationWidget />
+        <p className="text-center text-xs text-[#7C6B8E] mt-6">
+          Mais de 30 voluntários e doadores em todo o Brasil já apoiam a Anjos d&apos;Ajuda.
+        </p>
       </SectionWrapper>
 
       {/* PIX */}

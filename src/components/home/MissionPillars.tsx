@@ -13,8 +13,8 @@ const pillars = [
   },
   {
     photo: "/story/protetores.jpg",
-    title: "Rede de Protetores",
-    body: "Contamos com moradores que levam animais ao mutirão e acolhem temporariamente quando necessário. Quando o poder público não chega, essa rede é o que nos permite agir.",
+    title: "Voluntários e Protetores",
+    body: "Moradores que transportam animais, acolhem temporariamente e participam dos mutirões. São eles que tornam possível agir onde o poder público não chega — uma rede humana que multiplica nosso alcance.",
   },
 ];
 

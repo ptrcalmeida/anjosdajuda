@@ -4,9 +4,9 @@ import { useState } from "react";
 
 const PRESETS = [
   { amount: 50, label: "1 vacina antirrábica" },
-  { amount: 95, label: "½ castração" },
   { amount: 190, label: "1 castração completa" },
   { amount: 380, label: "2 castrações" },
+  { amount: 500, label: "1 semana de ração" },
 ];
 
 export function DonationWidget() {
