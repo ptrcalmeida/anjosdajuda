@@ -12,105 +12,79 @@ export const metadata: Metadata = {
 export default function DoePage() {
   return (
     <>
-      {/* Header */}
-      <SectionWrapper innerClassName="max-w-3xl">
-        <p className="text-xs font-semibold uppercase tracking-widest text-[#7E22CE] mb-3">
-          Apoie a missão
-        </p>
-        <h1 className="text-4xl md:text-5xl font-black text-[#1A103C] mb-5">
-          Doe para a Anjos d&apos;Ajuda
-        </h1>
-        <p className="text-lg text-[#7C6B8E] leading-relaxed">
-          Funcionamos 100% por meio de doações e trabalho voluntário. Não
-          recebemos nenhum apoio do poder público. Cada real que chega financia
-          diretamente castração, alimentação e — quando não há alternativa —
-          resgate e tratamento de animais em situação extrema.
+      {/* Emotional header + widget */}
+      <SectionWrapper innerClassName="max-w-lg">
+        <div className="text-center mb-8">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#7E22CE] mb-4">
+            Arraial d&apos;Ajuda · Desde 2013
+          </p>
+          <h1 className="text-4xl md:text-5xl font-black text-[#1A103C] mb-5 leading-tight">
+            Sem doações,<br />o nosso trabalho para.
+          </h1>
+          <p className="text-lg text-[#7C6B8E] leading-relaxed mb-3">
+            Funcionamos 100% por meio de doações e trabalho voluntário.
+            Não há outra fonte de renda — cada mutirão de castração, cada
+            animal resgatado, cada vacina aplicada depende diretamente de
+            pessoas como você.
+          </p>
+        </div>
+
+        {/* Urgency strip */}
+        <div className="bg-[#1A103C] rounded-xl px-6 py-4 mb-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#C084FC] mb-0.5">
+              Necessidade do mês — Abril 2026
+            </p>
+            <p className="text-white font-black leading-tight">
+              Próximo mutirão precisa de R$5.700
+            </p>
+          </div>
+          <p className="text-white/50 text-sm shrink-0">R$190 = 1 castração</p>
+        </div>
+
+        <DonationWidget />
+
+        <p className="text-center text-xs text-[#7C6B8E] mt-5">
+          Mais de 30 voluntários e doadores em todo o Brasil já apoiam a Anjos d&apos;Ajuda.
         </p>
       </SectionWrapper>
 
-      {/* Para onde vai sua doação */}
-      <section className="bg-[#F3E8FF] py-16 px-4">
+      {/* Impact — minimal, below widget */}
+      <section className="bg-[#F3E8FF] py-14 px-4 border-y border-[#E9D5FF]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl font-black text-[#1A103C] mb-8">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#7E22CE] mb-6 text-center">
             Para onde vai sua doação
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {[
               {
                 title: "Castração",
-                description:
-                  "Nosso foco principal. Mutirões regulares com veterinários voluntários para esterilizar cães e gatos de rua e de famílias carentes.",
                 highlight: "R$190 = 1 castração",
+                description: "Mutirões regulares com veterinários voluntários. É a intervenção mais eficaz no controle do abandono.",
               },
               {
                 title: "Alimentação",
-                description:
-                  "Todo mês buscamos doações para alimentar os animais sob nossa responsabilidade. Não temos doador fixo de ração — cada mês é um esforço novo.",
-                highlight: "Necessidade urgente e mensal",
+                highlight: "Necessidade urgente todo mês",
+                description: "Não temos doador fixo de ração. Cada mês é um esforço novo para alimentar os animais sob nossa responsabilidade.",
               },
               {
                 title: "Resgate & Tratamento",
-                description:
-                  "Em situações extremas e por falta de suporte público, resgatamos e cobrimos custos veterinários de animais em sofrimento grave.",
                 highlight: "Quando não há outra saída",
+                description: "Em situações extremas e por falta de suporte público, resgatamos e cobrimos custos veterinários emergenciais.",
               },
             ].map((item) => (
-              <div
-                key={item.title}
-                className="bg-white rounded-xl p-6 border border-[#E9D5FF]"
-              >
-                <h3 className="font-bold text-[#1A103C] mb-2">{item.title}</h3>
-                <p className="text-sm text-[#7C6B8E] leading-relaxed mb-4">
-                  {item.description}
-                </p>
-                <span className="text-xs font-bold text-[#7E22CE] uppercase tracking-wide">
-                  {item.highlight}
-                </span>
+              <div key={item.title} className="bg-white rounded-xl p-5 border border-[#E9D5FF]">
+                <h3 className="font-bold text-[#1A103C] mb-1">{item.title}</h3>
+                <p className="text-xs font-bold text-[#7E22CE] uppercase tracking-wide mb-3">{item.highlight}</p>
+                <p className="text-sm text-[#7C6B8E] leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Urgency banner — update the numbers monthly */}
-      <section className="bg-[#1A103C] py-6 px-4">
-        <div className="max-w-3xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#C084FC] mb-1">
-              Necessidade do mês — Abril 2026
-            </p>
-            <p className="text-white font-black text-lg leading-tight">
-              Próximo mutirão de castração precisa de R$5.700
-            </p>
-          </div>
-          <p className="text-white/60 text-sm shrink-0">
-            Cada R$190 = 1 animal castrado
-          </p>
-        </div>
-      </section>
-
-      {/* Donation widget */}
-      <SectionWrapper innerClassName="max-w-lg">
-        <div className="text-center mb-8">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#7E22CE] mb-3">
-            Doe agora
-          </p>
-          <h2 className="text-3xl font-black text-[#1A103C] mb-3">
-            Escolha como quer ajudar
-          </h2>
-          <p className="text-[#7C6B8E]">
-            Doação única ou mensal recorrente — cartão nacional e
-            internacional, PIX.
-          </p>
-        </div>
-        <DonationWidget />
-        <p className="text-center text-xs text-[#7C6B8E] mt-6">
-          Mais de 30 voluntários e doadores em todo o Brasil já apoiam a Anjos d&apos;Ajuda.
-        </p>
-      </SectionWrapper>
-
-      {/* PIX */}
-      <section className="bg-[#F3E8FF] py-16 px-4">
+      {/* Alternative payment methods */}
+      <section className="bg-white py-16 px-4">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl font-black text-[#1A103C] mb-2">
             Prefere transferir diretamente?
@@ -139,8 +113,8 @@ export default function DoePage() {
             </p>
           </div>
 
-          {/* Transferência internacional */}
-          <div className="bg-white border border-[#E9D5FF] rounded-2xl p-8 mb-6">
+          {/* International */}
+          <div className="bg-white border border-[#E9D5FF] rounded-2xl p-8">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-full bg-[#F3E8FF] flex items-center justify-center shrink-0">
                 <span className="text-[#7E22CE] font-black text-xs">INTL</span>
@@ -162,38 +136,6 @@ export default function DoePage() {
                   <CopyButton text={row.value} />
                 </div>
               ))}
-            </div>
-          </div>
-
-          {/* Patrocínio de ração */}
-          <div className="bg-[#1A103C] rounded-2xl p-8">
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#C084FC] mb-3">
-              Necessidade urgente
-            </p>
-            <h3 className="text-xl font-black text-white mb-3">
-              Patrocínio de ração
-            </h3>
-            <p className="text-white/70 text-sm leading-relaxed mb-6">
-              Não temos um doador fixo de ração. Todo mês é um esforço enorme para
-              alimentar os animais sob nossa responsabilidade. Se você é uma
-              empresa, petshop ou distribuidor, ou simplesmente quer garantir que
-              nenhum dos nossos animais passe fome — entre em contato.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <a
-                href="https://wa.me/5573999214880?text=Olá%2C%20gostaria%20de%20patrocinar%20ração%20para%20a%20Anjos%20d'Ajuda"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-lg px-6 py-3 text-sm font-bold bg-[#FF6B4A] text-white hover:bg-[#E55530] transition-colors"
-              >
-                WhatsApp
-              </a>
-              <a
-                href="mailto:anjosdajuda@gmail.com?subject=Patrocínio%20de%20ração"
-                className="inline-flex items-center justify-center rounded-lg px-6 py-3 text-sm font-bold border-2 border-[#C084FC] text-[#C084FC] hover:bg-[#C084FC] hover:text-[#1A103C] transition-colors"
-              >
-                anjosdajuda@gmail.com
-              </a>
             </div>
           </div>
         </div>
