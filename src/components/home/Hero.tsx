@@ -35,9 +35,9 @@ export default function Hero() {
           className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed"
           style={{ textShadow: "0 1px 8px rgba(0,0,0,0.5)" }}
         >
-          Centenas de cães e gatos nascem abandonados todo ano em Arraial
-          d&apos;Ajuda. Desde 2013, a Anjos d&apos;Ajuda combate isso na raiz —
-          castrando, educando e, quando necessário, resgatando.
+          A maioria das ONGs resgata os sintomas. Nós atacamos a causa —
+          castrando, educando e construindo uma comunidade que não abandona.
+          Há 13 anos em Arraial d&apos;Ajuda, sem nenhum apoio do poder público.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

@@ -30,9 +30,9 @@ export default function MissionPillars() {
             Três frentes. Um objetivo.
           </h2>
           <p className="text-[#7C6B8E] leading-relaxed">
-            Castração e educação são nossas missões principais. São as únicas
-            ferramentas que atacam o abandono na raiz — de forma sustentável e
-            duradoura.
+            Resgatar alivia o sofrimento imediato. Mas só castração e educação
+            eliminam o problema na origem — e são as únicas ferramentas que
+            ainda funcionam depois que as leis e multas falham.
           </p>
         </div>
 

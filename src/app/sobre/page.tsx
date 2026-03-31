@@ -48,20 +48,22 @@ export default function SobrePage() {
             Nossa missão
           </p>
           <p className="text-xl md:text-2xl text-[#1A103C] font-semibold leading-relaxed mb-6">
-            A Anjos d&apos;Ajuda é uma ONG sem fins lucrativos fundada em 2013
-            em Arraial d&apos;Ajuda, Bahia.
+            A maioria das ONGs de proteção animal resgata os sintomas.
+            A Anjos d&apos;Ajuda ataca a causa.
           </p>
           <p className="text-lg text-[#7C6B8E] leading-relaxed mb-6">
-            Em mais de 13 anos de atuação, já atendemos mais de 10.000 animais
-            por meio de castração e esterilização, resgate emergencial,
-            tratamento veterinário e adoção responsável. Funcionamos 100% com
-            doações e trabalho voluntário — sem nenhum apoio do poder público.
+            Fundada em 2013 em Arraial d&apos;Ajuda, Bahia, nossa prioridade
+            sempre foi castração e educação — as únicas ferramentas que
+            reduzem o abandono de forma permanente. Resgatar alivia o sofrimento
+            imediato, mas uma fêmea não castrada pode gerar até 67 novos animais
+            em seis anos. É esse ciclo que quebramos.
           </p>
           <p className="text-lg text-[#7C6B8E] leading-relaxed">
-            Nossa atuação vai além do resgate. O foco está na causa: castrar,
-            educar e conscientizar a comunidade sobre guarda responsável e saúde
-            pública. Cada animal castrado evita dezenas de abandonos futuros.
-            Cada criança educada quebra o ciclo onde leis e multas falham.
+            Em mais de 13 anos, atendemos mais de 10.000 animais — 100% por meio
+            de doações e trabalho voluntário, sem nenhum apoio do poder público.
+            Cada criança que educamos sobre guarda responsável muda o comportamento
+            de uma família inteira. Cada mutirão de castração evita centenas de
+            abandonos futuros.
           </p>
         </div>
       </section>
@@ -150,6 +152,57 @@ export default function SobrePage() {
                     {item.title}
                   </h3>
                   <p className="text-[#7C6B8E] leading-relaxed">{item.body}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* O que nos torna únicos */}
+      <section className="bg-[#1A103C] py-16 px-4">
+        <div className="max-w-3xl mx-auto">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#C084FC] mb-4">
+            O que nos torna únicos
+          </p>
+          <h2 className="text-3xl font-black text-white mb-10">
+            Cinco razões pelas quais o que fazemos é diferente.
+          </h2>
+          <div className="flex flex-col gap-8">
+            {[
+              {
+                n: "01",
+                title: "Causa, não sintoma",
+                body: "Enquanto a maioria resgata animais já abandonados, nosso foco é evitar que o abandono aconteça. Castração e educação são intervenções permanentes — não remédio para emergência.",
+              },
+              {
+                n: "02",
+                title: "Uma cidade. Um problema real de resolver.",
+                body: "Arraial d'Ajuda tem menos de 20 mil habitantes. Isso nos permite medir, agir e ver resultados reais no controle populacional — algo impossível em metrópoles onde o problema é infinito.",
+              },
+              {
+                n: "03",
+                title: "Zero dependência do poder público",
+                body: "Nunca recebemos repasse governamental. Existimos porque a comunidade acredita na causa — não porque um orçamento público foi aprovado. Isso nos dá independência para agir onde e quando for necessário.",
+              },
+              {
+                n: "04",
+                title: "13 anos de presença contínua",
+                body: "Em um setor marcado por alto turnover e projetos que surgem e somem, a Anjos d'Ajuda está no mesmo lugar, com a mesma missão, desde 2013. Não somos um evento — somos uma instituição.",
+              },
+              {
+                n: "05",
+                title: "Educação como infraestrutura",
+                body: "Trabalhamos com escolas para mudar comportamento antes do abandono acontecer. Uma criança que aprende a respeitar animais cresce sem abandonar — e ensina os pais. É o único investimento que se paga sozinho.",
+              },
+            ].map((item) => (
+              <div key={item.n} className="flex gap-6 items-start">
+                <span className="text-3xl font-black text-[#7E22CE] leading-none shrink-0 w-10 pt-0.5">
+                  {item.n}
+                </span>
+                <div>
+                  <h3 className="font-black text-white text-lg mb-2">{item.title}</h3>
+                  <p className="text-white/60 leading-relaxed">{item.body}</p>
                 </div>
               </div>
             ))}
