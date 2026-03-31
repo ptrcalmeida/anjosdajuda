@@ -20,12 +20,12 @@ export default function SobrePage() {
   return (
     <>
       {/* Hero image */}
-      <section className="relative h-[60vh] min-h-[400px] overflow-hidden bg-[#1A103C]">
+      <section className="relative h-[70vh] min-h-[480px] overflow-hidden bg-[#1A103C]">
         <Image
           src="/story/sobre-hero.jpg"
           alt="Voluntário da Anjos d'Ajuda rodeado por cães resgatados em Arraial d'Ajuda, Bahia"
           fill
-          className="object-cover object-center"
+          className="object-cover object-top"
           priority
         />
         {/* Dark overlay */}
