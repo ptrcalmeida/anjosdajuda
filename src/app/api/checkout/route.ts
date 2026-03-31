@@ -3,7 +3,11 @@ import Stripe from "stripe";
 
 export async function POST(request: NextRequest) {
   try {
-    const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
+    const key = process.env.STRIPE_SECRET_KEY;
+    if (!key) {
+      return NextResponse.json({ error: "STRIPE_SECRET_KEY not set" }, { status: 500 });
+    }
+    const stripe = new Stripe(key, { maxNetworkRetries: 0, timeout: 8000 });
     const { amount, recurring } = await request.json();
 
     if (!amount || amount < 10) {
