@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+
 export const metadata: Metadata = {
   title: "Quem Somos — Anjos d'Ajuda",
   description:
@@ -69,22 +70,23 @@ export default function SobrePage() {
             Quem fundou
           </p>
           <div className="flex flex-col sm:flex-row items-start gap-8">
-            {/* Founder photo placeholder — replace src when image is provided */}
-            <div className="w-28 h-28 rounded-full bg-[#E9D5FF] shrink-0 overflow-hidden flex items-center justify-center">
-              <span className="text-[#7E22CE] text-xs font-semibold text-center px-2">
-                Foto em breve
-              </span>
+            <div className="w-28 h-28 rounded-full shrink-0 overflow-hidden border-4 border-[#E9D5FF]">
+              <Image
+                src="/story/founder.jpg"
+                alt="Jeannette Eggengoor, fundadora da Anjos d'Ajuda"
+                width={112}
+                height={112}
+                className="object-cover object-top w-full h-full"
+              />
             </div>
             <div>
               <h3 className="text-xl font-black text-[#1A103C] mb-1">
-                {/* Replace with founder name */}
-                Fundadora
+                Jeannette Eggengoor
               </h3>
               <p className="text-sm text-[#7E22CE] font-semibold mb-3">
                 Fundadora e diretora · Arraial d&apos;Ajuda, Bahia
               </p>
               <p className="text-[#7C6B8E] leading-relaxed">
-                {/* Replace with founder story */}
                 A Anjos d&apos;Ajuda nasceu em 2013 da convicção de que o
                 abandono animal é um problema solucionável — e que a solução
                 está nas mãos da própria comunidade. Em mais de uma década,
