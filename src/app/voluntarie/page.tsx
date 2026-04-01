@@ -62,12 +62,12 @@ export default function VoluntariePage() {
       </section>
 
       {/* Group photo */}
-      <section className="relative h-[50vh] min-h-[380px] overflow-hidden bg-[#1A103C]">
+      <section className="relative h-[70vh] min-h-[500px] overflow-hidden bg-[#1A103C]">
         <Image
           src="/story/voluntarios-grupo.jpg"
           alt="Voluntários da Anjos d'Ajuda trabalhando juntos em Arraial d'Ajuda"
           fill
-          className="object-cover object-center"
+          className="object-cover object-[center_20%]"
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#1A103C]/30 to-[#1A103C]/85" />
