@@ -128,6 +128,23 @@ export default function RootLayout({
             gtag('config', 'AW-18054286952');
           `}
         </Script>
+        <Script id="gtag-adopt-conversion" strategy="afterInteractive">
+          {`
+            function gtag_report_conversion(url) {
+              var callback = function () {
+                if (typeof(url) != 'undefined') { window.location = url; }
+              };
+              gtag('event', 'conversion', {
+                'send_to': 'AW-18054286952/dFj0CLWKipMcEOic-qBD',
+                'value': 1.0,
+                'currency': 'BRL',
+                'transaction_id': '',
+                'event_callback': callback
+              });
+              return false;
+            }
+          `}
+        </Script>
       </body>
     </html>
   );

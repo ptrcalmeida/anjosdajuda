@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import { AdoptButton } from "./AdoptButton";
 
 export interface Pet {
   id: string;
@@ -54,12 +54,7 @@ export function PetCard({ pet }: { pet: Pet }) {
         <p className="text-sm text-[#7C6B8E] leading-relaxed line-clamp-3 flex-1 mb-5">
           {pet.description}
         </p>
-        <Link
-          href={`/contato?adotar=${pet.id}`}
-          className="inline-flex items-center justify-center w-full rounded-lg px-4 py-2.5 text-sm font-semibold border-2 border-[#7E22CE] text-[#7E22CE] hover:bg-[#F3E8FF] transition-colors"
-        >
-          Quero Adotar
-        </Link>
+        <AdoptButton petId={pet.id} />
       </div>
     </div>
   );
