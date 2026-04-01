@@ -18,7 +18,7 @@ export default function RescueHighlight() {
             Resgate em situações extremas
           </p>
           <h2 className="text-3xl md:text-4xl font-black text-white">
-            Quando o Estado não chega, nós chegamos
+            Quando o poder público não chega, nós chegamos
           </h2>
         </div>
 
