@@ -47,6 +47,30 @@ Stack: Next.js 16.2.1 + TypeScript + Tailwind CSS v4 + Stripe.
 2. Educação — primary focus
 3. Resgate e tratamento — only when no alternative; NOT the main mission
 
+## Volunteer page
+- `src/app/voluntarie/page.tsx` — 6 role cards + group photo hero
+- Group photo: `public/story/voluntarios-grupo.jpg` (source: `src/components/stock images/AnjosDAjuda_LuisaRiekes-88.jpg`)
+
+## Donors (private — NOT in repo)
+- Tracked in `~/Documents/anjosdajuda-donors.csv`
+- Danilo Santini Hipólito — R$50/mês — MasterCard ••••2783
+- Ana Cristina Queiroz Leite — R$250/mês — Visa ••••7421
+- Both need to migrate to new payment platform eventually
+
+## Stripe integration details
+- One-time: `payment_method_types: ["card", "pix"]` — PIX requires activation in Stripe Dashboard
+- Recurring: `payment_method_types: ["card"]` only (PIX doesn't support subscriptions)
+- Base URL derived from `request.url` (not env var) to avoid invalid URL errors
+- PIX not yet visible in Dashboard — needs activation by Stripe support (account may need BR verification)
+- Google Pay / Apple Pay: enabled automatically by Stripe when card wallets are on in Dashboard
+
+## SEO implemented
+- Schema.org: NGO + nonprofitStatus + areaServed + DonateAction (/doe) + FAQPage (/adote)
+- sitemap.ts + robots.ts in place
+- Hero H1 has sr-only location keyword appended
+- /adote H1: "Adote um cão ou gato em Arraial d'Ajuda"
+
 ## Deployment
 - GitHub → Vercel (automatic deploys on push to main)
-- Add Stripe keys in Vercel: Settings → Environment Variables
+- Live at: anjosdajuda.vercel.app (custom domain anjosdajuda.org — needs DNS connection)
+- Stripe env vars set in Vercel dashboard (STRIPE_SECRET_KEY, NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY)
