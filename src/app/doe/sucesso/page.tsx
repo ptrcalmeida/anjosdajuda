@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Obrigada pela sua doação — Anjos d'Ajuda",
@@ -9,6 +10,16 @@ export const metadata: Metadata = {
 export default function SucessoPage() {
   return (
     <>
+      <Script id="gtag-conversion" strategy="afterInteractive">
+        {`
+          gtag('event', 'conversion', {
+            'send_to': 'AW-18054286952/dFj0CLWKipMcEOic-qBD',
+            'value': 1.0,
+            'currency': 'BRL',
+            'transaction_id': ''
+          });
+        `}
+      </Script>
       <section className="bg-white py-24 px-4">
         <div className="max-w-lg mx-auto text-center">
           {/* Check */}
