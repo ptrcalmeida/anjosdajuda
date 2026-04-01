@@ -6,7 +6,7 @@ const story = {
   name: "Nala",
   label: "Quando não há outra saída",
   title: "O resgate não é nossa missão. É nossa responsabilidade.",
-  body: "A Anjos d'Ajuda não é uma ONG de resgate — somos de castração e educação. Mas quando o poder público falha e o sofrimento está na nossa frente, não desviamos o olhar. Nala foi atropelada, perdeu um membro dianteiro, e ninguém ia ajudá-la. Resgatamos, reabilitamos e encontramos lar temporário. Ela aguarda adoção.",
+  body: "A Anjos d'Ajuda não é uma ONG de resgate, nossa missão é a castração e educação. Mas quando o poder público falha e o sofrimento está na nossa frente, não desviamos o olhar. Nala foi atropelada, perdeu um membro dianteiro, e ninguém ia ajudá-la. Resgatamos, reabilitamos e encontramos lar temporário. Ela aguarda adoção.",
 };
 
 export default function RescueHighlight() {
