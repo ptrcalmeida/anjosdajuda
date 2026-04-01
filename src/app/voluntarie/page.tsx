@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -56,6 +57,25 @@ export default function VoluntariePage() {
             A Anjos d&apos;Ajuda existe porque pessoas escolhem agir. Se você
             mora em Arraial d&apos;Ajuda ou arredores — ou simplesmente quer
             ajudar à distância — há uma forma de contribuir.
+          </p>
+        </div>
+      </section>
+
+      {/* Group photo */}
+      <section className="relative h-[50vh] min-h-[380px] overflow-hidden bg-[#1A103C]">
+        <Image
+          src="/story/voluntarios-grupo.jpg"
+          alt="Voluntários da Anjos d'Ajuda trabalhando juntos em Arraial d'Ajuda"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#1A103C]/30 to-[#1A103C]/85" />
+        <div className="absolute inset-0 flex flex-col justify-end px-4 pb-10 max-w-3xl mx-auto z-10">
+          <p className="text-white font-black text-xl md:text-2xl leading-snug max-w-lg"
+            style={{ textShadow: "0 2px 12px rgba(0,0,0,0.4)" }}>
+            30 voluntários. Uma missão.<br />
+            <span className="text-[#C084FC]">Arraial d&apos;Ajuda.</span>
           </p>
         </div>
       </section>
