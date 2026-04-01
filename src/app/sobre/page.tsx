@@ -25,7 +25,7 @@ export default function SobrePage() {
           src="/story/sobre-hero.jpg"
           alt="Voluntário da Anjos d'Ajuda rodeado por cães resgatados em Arraial d'Ajuda, Bahia"
           fill
-          className="object-cover object-[50%_80%]"
+          className="object-cover object-bottom"
           priority
         />
         {/* Dark overlay */}
