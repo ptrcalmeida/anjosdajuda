@@ -74,7 +74,7 @@ export default function SobrePage() {
           src="/story/campo-animais.jpg"
           alt="Voluntário da Anjos d'Ajuda cercado por cães resgatados em Arraial d'Ajuda"
           fill
-          className="object-cover object-top"
+          className="object-cover object-bottom"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#1A103C]/70 via-transparent to-transparent" />
         <div className="absolute bottom-8 left-4 right-4 max-w-6xl mx-auto z-10">
