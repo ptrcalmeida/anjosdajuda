@@ -68,6 +68,22 @@ export default function SobrePage() {
         </div>
       </section>
 
+      {/* Full-bleed editorial photo */}
+      <section className="relative h-[55vh] min-h-[400px] overflow-hidden bg-[#1A103C]">
+        <Image
+          src="/story/campo-animais.jpg"
+          alt="Voluntário da Anjos d'Ajuda cercado por cães resgatados em Arraial d'Ajuda"
+          fill
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#1A103C]/70 via-transparent to-transparent" />
+        <div className="absolute bottom-8 left-4 right-4 max-w-6xl mx-auto z-10">
+          <p className="text-white/80 text-sm font-semibold italic">
+            O trabalho de campo em Arraial d&apos;Ajuda — um voluntário, dezenas de animais.
+          </p>
+        </div>
+      </section>
+
       {/* Founder */}
       <section className="bg-[#FAF8FF] py-16 px-4 border-y border-[#E9D5FF]">
         <div className="max-w-3xl mx-auto">
@@ -156,6 +172,38 @@ export default function SobrePage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Transparency */}
+      <section className="bg-[#FAF8FF] py-16 px-4 border-y border-[#E9D5FF]">
+        <div className="max-w-3xl mx-auto">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#7E22CE] mb-4">
+            Transparência
+          </p>
+          <h2 className="text-3xl font-black text-[#1A103C] mb-3">
+            Como usamos as doações
+          </h2>
+          <p className="text-[#7C6B8E] leading-relaxed mb-10 max-w-xl">
+            Funcionamos sem apoio público. Cada real doado vai diretamente para
+            o trabalho em campo — sem sede própria, sem salários administrativos.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+            {[
+              { pct: "70%", title: "Castração e esterilização", desc: "Mutirões regulares, insumos cirúrgicos e apoio a veterinários voluntários." },
+              { pct: "20%", title: "Alimentação", desc: "Ração para os animais sob nossa responsabilidade — nossa necessidade mais urgente e recorrente." },
+              { pct: "10%", title: "Resgate e tratamento", desc: "Emergências veterinárias em casos extremos, quando não há outra saída." },
+            ].map((item) => (
+              <div key={item.title} className="bg-white border border-[#E9D5FF] rounded-xl p-6">
+                <p className="text-4xl font-black text-[#7E22CE] leading-none mb-2">{item.pct}</p>
+                <h3 className="font-bold text-[#1A103C] mb-2 text-sm">{item.title}</h3>
+                <p className="text-xs text-[#7C6B8E] leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+          <p className="mt-6 text-xs text-[#7C6B8E]">
+            CNPJ: 20.699.396/0001-14 · Associação sem fins lucrativos registrada em Arraial d&apos;Ajuda, Bahia.
+          </p>
         </div>
       </section>
 
