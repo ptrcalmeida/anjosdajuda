@@ -22,10 +22,10 @@ export default function SobrePage() {
       {/* Hero image */}
       <section className="relative h-[70vh] min-h-[480px] overflow-hidden bg-[#1A103C]">
         <Image
-          src="/story/sobre-hero-grupo.jpg"
-          alt="Voluntários da Anjos d'Ajuda em mutirão de castração em Arraial d'Ajuda, Bahia"
+          src="/story/sobre-hero.jpg"
+          alt="Voluntário da Anjos d'Ajuda rodeado por cães resgatados em Arraial d'Ajuda, Bahia"
           fill
-          className="object-cover object-center"
+          className="object-cover object-top"
           priority
         />
         {/* Dark overlay */}
@@ -71,10 +71,10 @@ export default function SobrePage() {
       {/* Full-bleed editorial photo */}
       <section className="relative h-[55vh] min-h-[400px] overflow-hidden bg-[#1A103C]">
         <Image
-          src="/story/campo-animais.jpg"
-          alt="Voluntário da Anjos d'Ajuda cercado por cães resgatados em Arraial d'Ajuda"
+          src="/story/sobre-hero-grupo.jpg"
+          alt="Voluntários da Anjos d'Ajuda em mutirão de castração em Arraial d'Ajuda"
           fill
-          className="object-cover object-bottom"
+          className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#1A103C]/70 via-transparent to-transparent" />
         <div className="absolute bottom-8 left-4 right-4 max-w-6xl mx-auto z-10">
