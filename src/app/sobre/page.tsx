@@ -22,7 +22,7 @@ export default function SobrePage() {
       {/* Hero image */}
       <section className="relative h-[70vh] min-h-[480px] overflow-hidden bg-[#1A103C]">
         <Image
-          src="/story/mutirao-voluntarios.jpg"
+          src="/story/sobre-hero-grupo.jpg"
           alt="Voluntários da Anjos d'Ajuda em mutirão de castração em Arraial d'Ajuda, Bahia"
           fill
           className="object-cover object-center"
