@@ -43,6 +43,12 @@ export const metadata: Metadata = {
     "ONG sem fins lucrativos Bahia",
     "resgate animal Arraial d'Ajuda",
     "adoção responsável Bahia",
+    "doação de ração para ONG",
+    "parceria pet food ONG Bahia",
+    "doação de alimento para animais",
+    "patrocínio ONG animais Arraial d'Ajuda",
+    "marca pet parceria social",
+    "doação ração cães gatos ONG",
   ],
 };
 

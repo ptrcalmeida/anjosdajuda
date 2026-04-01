@@ -4,6 +4,7 @@ import Stats from "@/components/home/Stats";
 import MissionPillars from "@/components/home/MissionPillars";
 import ImpactChain from "@/components/home/ImpactChain";
 import RescueHighlight from "@/components/home/RescueHighlight";
+import FoodPartnership from "@/components/home/FoodPartnership";
 import Testimonial from "@/components/home/Testimonial";
 import FinalCTA from "@/components/home/FinalCTA";
 
@@ -16,6 +17,7 @@ export default function HomePage() {
       <MissionPillars />
       <ImpactChain />
       <RescueHighlight />
+      <FoodPartnership />
       <Testimonial />
       <FinalCTA />
     </>
