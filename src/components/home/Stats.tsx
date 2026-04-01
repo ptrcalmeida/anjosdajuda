@@ -1,5 +1,5 @@
 const STATS = [
-  { number: "10.000+", label: "Animais Atendidos" },
+  { number: "10.000+", label: "Animais Castrados" },
   { number: "700+", label: "Adotados" },
   { number: "30+", label: "Voluntários" },
   { number: "13", label: "Anos de Dedicação" },

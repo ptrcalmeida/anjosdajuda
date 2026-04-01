@@ -12,7 +12,7 @@ const PRESETS = [
 export function DonationWidget() {
   const [selected, setSelected] = useState<number>(190);
   const [custom, setCustom] = useState("");
-  const [recurring, setRecurring] = useState(false);
+  const [recurring, setRecurring] = useState(true);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 

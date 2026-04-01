@@ -48,6 +48,9 @@ export function PetCard({ pet }: { pet: Pet }) {
         <p className="text-xs font-medium text-[#7E22CE] mb-3">
           {pet.species} · {pet.gender}
         </p>
+        <span className="inline-flex items-center gap-1 self-start text-[10px] font-bold uppercase tracking-wide text-[#7E22CE] bg-[#F3E8FF] border border-[#E9D5FF] rounded-full px-2.5 py-1 mb-3">
+          ✓ Castrado · Vacinado
+        </span>
         <p className="text-sm text-[#7C6B8E] leading-relaxed line-clamp-3 flex-1 mb-5">
           {pet.description}
         </p>
