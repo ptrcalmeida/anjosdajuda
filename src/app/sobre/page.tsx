@@ -79,7 +79,7 @@ export default function SobrePage() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#1A103C]/70 via-transparent to-transparent" />
         <div className="absolute bottom-8 left-4 right-4 max-w-6xl mx-auto z-10">
           <p className="text-white/80 text-sm font-semibold italic">
-            Pessoas comuns que escolheram não olhar para o outro lado — o coração da Anjos d&apos;Ajuda.
+            Pessoas que escolheram não olhar para o outro lado — o coração da Anjos d&apos;Ajuda.
           </p>
         </div>
       </section>
