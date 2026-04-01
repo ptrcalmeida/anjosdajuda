@@ -20,7 +20,7 @@ export async function POST(request: NextRequest) {
       mode: recurring ? "subscription" : "payment",
       // Subscriptions: card only (PIX doesn't support recurring)
       // One-time: card + PIX (BRL only, payment mode only — per Stripe docs)
-      payment_method_types: recurring ? ["card"] : ["card", "pix"],
+      payment_method_types: ["card"],
       line_items: [
         {
           price_data: {
