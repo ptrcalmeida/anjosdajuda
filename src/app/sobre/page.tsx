@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const stats = [
   { number: "13", label: "Anos de atuação" },
-  { number: "10.000+", label: "Animais atendidos" },
+  { number: "10.000+", label: "Animais castrados/esterilizados" },
   { number: "700+", label: "Adotados" },
   { number: "30+", label: "Voluntários" },
 ];
