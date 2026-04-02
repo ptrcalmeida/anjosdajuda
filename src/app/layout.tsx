@@ -123,7 +123,7 @@ export default function RootLayout({
         <Footer />
         <WhatsAppFloat />
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-18054286952"
+          src="https://www.googletagmanager.com/gtag/js?id=G-0DLPGC6C0C"
           strategy="afterInteractive"
         />
         <Script id="gtag-init" strategy="afterInteractive">
@@ -131,6 +131,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
+            gtag('config', 'G-0DLPGC6C0C');
             gtag('config', 'AW-18054286952');
           `}
         </Script>
