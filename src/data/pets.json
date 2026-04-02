@@ -270,7 +270,7 @@
     "gender": "Macho",
     "age": null,
     "description": "Sansão foi encontrado com um corte enorme na cabeça e cheio de bicheiras. O nome veio naturalmente: poucos sobrevivem ao que ele enfrentou. Castrado e em recuperação, ele é a prova de que força não tem nada a ver com tamanho.",
-    "photo": null,
+    "photo": "/pets/sansao.jpg",
     "status": "available",
     "featured": false
   },
@@ -402,7 +402,7 @@
     "gender": "Fêmea",
     "age": null,
     "description": "Joaninha é pequena, mas não passa em branco. Chegou das ruas de Arraial d'Ajuda com aquele jeitinho de quem sempre sobreviveu pela simpatia. Dócil, castrada e pronta para encontrar o lar que sempre mereceu.",
-    "photo": null,
+    "photo": "/pets/joaninha.jpg",
     "status": "available",
     "featured": false
   }
