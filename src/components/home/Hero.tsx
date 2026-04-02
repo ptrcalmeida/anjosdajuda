@@ -27,7 +27,7 @@ export default function Hero() {
           style={{ textShadow: "0 2px 16px rgba(0,0,0,0.4)" }}
         >
           Castrar. Educar.<br />
-          <span className="text-[#C084FC]">Resgatar.</span>
+          <span className="text-[#C084FC]">Proteger.</span>
           <span className="sr-only"> — ONG de proteção animal em Arraial d&apos;Ajuda, Bahia</span>
         </h1>
 
