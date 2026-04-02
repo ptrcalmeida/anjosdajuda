@@ -394,5 +394,16 @@
     "photo": "/pets/mel.jpg",
     "status": "available",
     "featured": false
+  },
+  {
+    "id": "joaninha",
+    "name": "Joaninha",
+    "species": "Cão",
+    "gender": "Fêmea",
+    "age": null,
+    "description": "Joaninha é pequena, mas não passa em branco. Chegou das ruas de Arraial d'Ajuda com aquele jeitinho de quem sempre sobreviveu pela simpatia. Dócil, castrada e pronta para encontrar o lar que sempre mereceu.",
+    "photo": null,
+    "status": "available",
+    "featured": false
   }
 ]
