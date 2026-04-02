@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- Background -->
+  <rect width="32" height="32" rx="8" fill="#1A103C"/>
+  <!-- Paw print in light purple -->
+  <!-- Main pad -->
+  <ellipse cx="16" cy="21" rx="6" ry="5" fill="#C084FC"/>
+  <!-- Top left toe -->
+  <ellipse cx="9.5" cy="14.5" rx="2.5" ry="3" fill="#C084FC"/>
+  <!-- Top center-left toe -->
+  <ellipse cx="13.5" cy="12.5" rx="2.5" ry="3" fill="#C084FC"/>
+  <!-- Top center-right toe -->
+  <ellipse cx="18.5" cy="12.5" rx="2.5" ry="3" fill="#C084FC"/>
+  <!-- Top right toe -->
+  <ellipse cx="22.5" cy="14.5" rx="2.5" ry="3" fill="#C084FC"/>
+</svg>
