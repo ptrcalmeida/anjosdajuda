@@ -67,7 +67,9 @@ Stack: Next.js 16.2.1 + TypeScript + Tailwind CSS v4 + Stripe.
 - Google Pay / Apple Pay: enabled automatically by Stripe when card wallets are on in Dashboard
 
 ## Google Ads (Ad Grants)
-- Tag ID: AW-18054286952 — installed in `src/app/layout.tsx`
+- Ads tag: AW-18054286952 — installed in `src/app/layout.tsx`
+- Analytics 4: G-0DLPGC6C0C — installed in `src/app/layout.tsx`
+- Both configured in the same gtag init script block
 - Conversion: AW-18054286952/dFj0CLWKipMcEOic-qBD
   - Fires on `/doe/sucesso` (donation completed)
   - Fires on "Quero Adotar" click via `AdoptButton.tsx`
