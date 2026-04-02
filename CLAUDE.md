@@ -23,17 +23,19 @@ Stack: Next.js 16.2.1 + TypeScript + Tailwind CSS v4 + Stripe.
 - Source/working photos (NOT served): `src/components/pets/` and `src/components/stock images/`
 
 ## Key files
-- `src/app/page.tsx` — homepage sections order
+- `src/app/page.tsx` — homepage sections order: Hero → FeaturedPets → Stats → MissionPillars → ImpactChain → RescueHighlight → FoodPartnership → Testimonial → FinalCTA
 - `src/app/doe/page.tsx` — donation page (Stripe widget + PIX + IBAN)
 - `src/app/sobre/page.tsx` — about page
 - `src/app/adote/page.tsx` — adoption gallery
 - `src/app/api/checkout/route.ts` — Stripe Checkout Session API route
 - `src/components/ui/DonationWidget.tsx` — client donation widget
-- `src/components/layout/Header.tsx` — sticky nav with logo
+- `src/components/layout/Header.tsx` — sticky nav, text logo "ONG Anjos d'Ajuda" (no image)
 - `src/components/layout/Footer.tsx` — footer with social links
+- `src/components/home/FoodPartnership.tsx` — corporate food donation section
+- `src/components/pets/AdoptButton.tsx` — client button with Google Ads conversion tracking
 
 ## Stripe integration
-- One-time: card (BR + INTL) + PIX
+- One-time: card (BR + INTL) — PIX code ready but not yet activated in Stripe Dashboard
 - Recurring: card only
 - Env vars: `STRIPE_SECRET_KEY` (server), `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY` (client)
 - Success redirect: `/doe/sucesso`
@@ -46,6 +48,7 @@ Stack: Next.js 16.2.1 + TypeScript + Tailwind CSS v4 + Stripe.
 1. Castração e esterilização — primary focus
 2. Educação — primary focus
 3. Resgate e tratamento — only when no alternative; NOT the main mission
+- NEVER use "Resgatar" as a mission pillar — use "Proteger" instead
 
 ## Volunteer page
 - `src/app/voluntarie/page.tsx` — 6 role cards + group photo hero
@@ -58,19 +61,30 @@ Stack: Next.js 16.2.1 + TypeScript + Tailwind CSS v4 + Stripe.
 - Both need to migrate to new payment platform eventually
 
 ## Stripe integration details
-- One-time: `payment_method_types: ["card", "pix"]` — PIX requires activation in Stripe Dashboard
+- One-time: `payment_method_types: ["card"]` — PIX requires activation in Stripe Dashboard (contact support)
 - Recurring: `payment_method_types: ["card"]` only (PIX doesn't support subscriptions)
 - Base URL derived from `request.url` (not env var) to avoid invalid URL errors
-- PIX not yet visible in Dashboard — needs activation by Stripe support (account may need BR verification)
 - Google Pay / Apple Pay: enabled automatically by Stripe when card wallets are on in Dashboard
+
+## Google Ads (Ad Grants)
+- Tag ID: AW-18054286952 — installed in `src/app/layout.tsx`
+- Conversion: AW-18054286952/dFj0CLWKipMcEOic-qBD
+  - Fires on `/doe/sucesso` (donation completed)
+  - Fires on "Quero Adotar" click via `AdoptButton.tsx`
+- First campaign live: Doação targeting `/doe`
+- Budget: R$329/day (Ad Grants limit)
 
 ## SEO implemented
 - Schema.org: NGO + nonprofitStatus + areaServed + DonateAction (/doe) + FAQPage (/adote)
 - sitemap.ts + robots.ts in place
 - Hero H1 has sr-only location keyword appended
 - /adote H1: "Adote um cão ou gato em Arraial d'Ajuda"
+- Keywords for food/ração corporate partnerships in layout.tsx
+
+## Favicon
+- `src/app/icon.svg` — paw print, navy background + light purple (#C084FC)
 
 ## Deployment
 - GitHub → Vercel (automatic deploys on push to main)
-- Live at: anjosdajuda.vercel.app (custom domain anjosdajuda.org — needs DNS connection)
+- Live at: anjosdajuda.org (also anjosdajuda.vercel.app)
 - Stripe env vars set in Vercel dashboard (STRIPE_SECRET_KEY, NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY)
