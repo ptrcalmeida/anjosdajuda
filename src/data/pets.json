@@ -302,9 +302,9 @@
     "species": "Gato",
     "gender": "Fêmea",
     "age": null,
-    "description": "Branca como coco fresco, delicada e ainda descobrindo o mundo. Coco veio das ruas junto com seu irmão e já está pronta pra um lar só dela. Castrada.",
-    "photo": "/pets/deck.jpg",
-    "status": "adopted",
+    "description": "Pequenininha e de olhos azuis, Coco chegou ao mundo com tudo pela frente. Tabby discreta com peito branco, ela já descobriu que sofás são melhores que calçadas. Procura um lar com paciência e carinho.",
+    "photo": "/pets/coco.jpg",
+    "status": "available",
     "featured": false
   },
   {
@@ -396,12 +396,45 @@
     "featured": false
   },
   {
+    "id": "gengibre",
+    "name": "Gengibre",
+    "species": "Cão",
+    "gender": "Fêmea",
+    "age": null,
+    "description": "Ruiva, jovem e com aquela língua de fora que já diz tudo. Gengibre chegou magra e saiu sorrindo — literalmente. É daquelas que enchem qualquer ambiente de energia boa sem nem tentar. Dócil, castrada e pronta pra embarcar na vida ao lado de quem mereça.",
+    "photo": "/pets/gengibre.jpg",
+    "status": "available",
+    "featured": false
+  },
+  {
+    "id": "nina",
+    "name": "Nina",
+    "species": "Cão",
+    "gender": "Fêmea",
+    "age": 8,
+    "description": "Nina tem 8 anos e uma história que exige respeito. Atropelada em fevereiro, passou por cirurgias e se recuperou com a força de quem sabe que ainda tem muito pra viver. Pastor alemão de porte nobre e olhar sereno — ela não precisa de muito, só de um lar à altura da sua lealdade.",
+    "photo": "/pets/nina.jpg",
+    "status": "available",
+    "featured": true
+  },
+  {
+    "id": "flocos",
+    "name": "Flocos",
+    "species": "Gato",
+    "gender": "Macho",
+    "age": null,
+    "description": "Branquinho com manchas tabby e orelhas que parecem grandes demais pro tamanho do corpo — Flocos ainda está crescendo, mas a personalidade já chegou. Curioso, compacto e com aquele olhar azul de quem quer entender tudo. Procura um lar tranquilo pra chamar de seu.",
+    "photo": "/pets/flocos.png",
+    "status": "available",
+    "featured": false
+  },
+  {
     "id": "joaninha",
     "name": "Joaninha",
     "species": "Cão",
     "gender": "Fêmea",
     "age": null,
-    "description": "Joaninha foi abandonada grávida e passou semanas vivendo embaixo de um carro — esperando, sozinha, sem saber se alguém ia aparecer. Quando foi resgatada, não latiu, não fugiu. Ficou quieta, como quem finalmente podia descansar. É assim até hoje: calma, obediente e grata de um jeito que aperta o coração. Castrada.",
+    "description": "Joaninha foi abandonada grávida e passou semanas vivendo embaixo de um carro — esperando, sozinha, sem saber se alguém ia aparecer. Quando foi resgatada, pariu seus filhotes em segurança, cuidou de cada um deles. É assim ela: calma, obediente e com um amor que não cabe em si. Os filhotes já têm lar. Agora é a vez dela.",
     "photo": "/pets/joaninha.jpg",
     "status": "available",
     "featured": false
