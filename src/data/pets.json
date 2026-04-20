@@ -106,7 +106,7 @@
     "age": null,
     "description": "O nome diz tudo. Lindinha é esbelta, elegante, preta com um toque branco no peito — e docinha do jeito que só cachorro resgatado sabe ser. Castrada.",
     "photo": "/pets/lindinha.jpg",
-    "status": "available",
+    "status": "adopted",
     "featured": false
   },
   {
@@ -194,7 +194,7 @@
     "age": null,
     "description": "Maria foi encontrada num terreno abandonado, quase sem forças, perto do limite entre a vida e o que vem depois. Quem a viu naquele dia não imaginava que esse pelo ruivo e farto voltaria a brilhar. Mas ela voltou. Das ruas de Arraial d'Ajuda pra um lar que mereça toda essa resiliência. Castrada.",
     "photo": "/pets/maria.jpg",
-    "status": "available",
+    "status": "adopted",
     "featured": true
   },
   {
@@ -260,7 +260,7 @@
     "age": null,
     "description": "Buda chegou com aquela energia de quem já fez as pazes com o mundo. Pelo ruivo, jeito tranquilo, presença de mestre — ele só precisa de um lar à altura da sua serenidade. Castrado.",
     "photo": "/pets/buda.jpg",
-    "status": "available",
+    "status": "adopted",
     "featured": false
   },
   {
@@ -293,7 +293,7 @@
     "age": null,
     "description": "Tabby escuro, miúdo e curioso. Caju chegou das ruas de Arraial d'Ajuda ainda pequeno, e já mostra que tem personalidade de sobra. Castrado.",
     "photo": "/pets/deck.jpg",
-    "status": "available",
+    "status": "adopted",
     "featured": false
   },
   {
@@ -304,7 +304,7 @@
     "age": null,
     "description": "Branca como coco fresco, delicada e ainda descobrindo o mundo. Coco veio das ruas junto com seu irmão e já está pronta pra um lar só dela. Castrada.",
     "photo": "/pets/deck.jpg",
-    "status": "available",
+    "status": "adopted",
     "featured": false
   },
   {
@@ -348,7 +348,7 @@
     "age": null,
     "description": "Bill é intenso e expressivo — nunca passa despercebido. Pelagem escura e porte forte, cheio de personalidade. Com a família certa, vai ser presença garantida.",
     "photo": "/pets/bill-capitao.jpg",
-    "status": "available",
+    "status": "adopted",
     "featured": false
   },
   {
