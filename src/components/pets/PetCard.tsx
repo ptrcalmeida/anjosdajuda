@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { AdoptButton } from "./AdoptButton";
+import { ExpandableDescription } from "./ExpandableDescription";
 
 export interface Pet {
   id: string;
@@ -51,9 +52,7 @@ export function PetCard({ pet }: { pet: Pet }) {
         <span className="inline-flex items-center gap-1 self-start text-[10px] font-bold uppercase tracking-wide text-[#7E22CE] bg-[#F3E8FF] border border-[#E9D5FF] rounded-full px-2.5 py-1 mb-3">
           ✓ Castrado · Vacinado
         </span>
-        <p className="text-sm text-[#7C6B8E] leading-relaxed line-clamp-3 flex-1 mb-5">
-          {pet.description}
-        </p>
+        <ExpandableDescription text={pet.description} />
         <AdoptButton petId={pet.id} />
       </div>
     </div>
