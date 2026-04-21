@@ -53,7 +53,7 @@ export function PetCard({ pet }: { pet: Pet }) {
           ✓ Castrado · Vacinado
         </span>
         <ExpandableDescription text={pet.description} />
-        <AdoptButton petId={pet.id} />
+        <AdoptButton petId={pet.id} petName={pet.name} />
       </div>
     </div>
   );
