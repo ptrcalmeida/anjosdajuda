@@ -63,10 +63,8 @@ const organizationSchema = {
   "description": "ONG sem fins lucrativos fundada em 2013 em Arraial d'Ajuda, Bahia. Castração, resgate e adoção responsável de cães e gatos no Sul da Bahia.",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Rua Mucugê, 333, Shopping d'Ajuda",
     "addressLocality": "Arraial d'Ajuda",
     "addressRegion": "BA",
-    "postalCode": "45816-000",
     "addressCountry": "BR"
   },
   "contactPoint": {

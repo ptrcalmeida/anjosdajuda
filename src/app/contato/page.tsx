@@ -79,11 +79,7 @@ export default function ContatoPage() {
             <div className="flex flex-col gap-4">
               <div className="flex items-start gap-3 text-sm text-[#7C6B8E]">
                 <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-[#7E22CE]" />
-                <span>
-                  Rua Mucugê, 333, Shopping d&apos;Ajuda
-                  <br />
-                  Arraial d&apos;Ajuda, Bahia · CEP 45816-000
-                </span>
+                <span>Arraial d&apos;Ajuda, Bahia</span>
               </div>
               <a
                 href="https://wa.me/5573999214880"

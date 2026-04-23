@@ -101,7 +101,7 @@ export default function Footer() {
             <div className="flex flex-col gap-3">
               <div className="flex items-start gap-3 text-sm text-white/60">
                 <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-[#C084FC]" />
-                <span>Rua Mucugê, 333. Shopping d&apos;Ajuda, Arraial d&apos;Ajuda, Bahia 45816-000</span>
+                <span>Arraial d&apos;Ajuda, Bahia</span>
               </div>
               <a href="tel:+5573999214880" className="flex items-center gap-3 text-sm text-white/60 hover:text-white transition-colors">
                 <Phone className="w-4 h-4 shrink-0 text-[#C084FC]" />
