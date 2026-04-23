@@ -396,6 +396,17 @@
     "featured": false
   },
   {
+    "id": "bento-zequinha",
+    "name": "Bento & Zequinha",
+    "species": "Cão",
+    "gender": "Macho",
+    "age": null,
+    "description": "Bento e Zequinha são irmãos — e inseparáveis. Abandonados pequeninhos, sobreviveram embaixo de um carro se alimentando do que encontravam no lixo, um do lado do outro, até serem resgatados. Não sabem viver sem o outro. Procuramos um lar que aceite os dois juntos: quem adotar um leva o amor dobrado.",
+    "photo": "/pets/bento-zequinha.jpg",
+    "status": "available",
+    "featured": true
+  },
+  {
     "id": "gengibre",
     "name": "Gengibre",
     "species": "Cão",
