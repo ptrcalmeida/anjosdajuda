@@ -8,6 +8,8 @@ export interface Pet {
   species: string;
   gender: string;
   age: number | null;
+  age_label?: string;
+  neutered?: boolean;
   description: string;
   photo: string | null;
   status: string;
@@ -39,18 +41,16 @@ export function PetCard({ pet }: { pet: Pet }) {
         <div className="flex items-baseline justify-between mb-1">
           <h3 className="text-lg font-bold text-[#1A103C]">{pet.name}</h3>
           <span className="text-xs text-[#7C6B8E] shrink-0 ml-2">
-            {pet.age !== null
-              ? pet.age === 1
-                ? "1 ano"
-                : `${pet.age} anos`
-              : "Idade desconhecida"}
+            {pet.age_label ?? (pet.age !== null
+              ? pet.age === 1 ? "1 ano" : `${pet.age} anos`
+              : "Idade desconhecida")}
           </span>
         </div>
         <p className="text-xs font-medium text-[#7E22CE] mb-3">
           {pet.species} · {pet.gender}
         </p>
         <span className="inline-flex items-center gap-1 self-start text-[10px] font-bold uppercase tracking-wide text-[#7E22CE] bg-[#F3E8FF] border border-[#E9D5FF] rounded-full px-2.5 py-1 mb-3">
-          ✓ Castrado · Vacinado
+          {pet.neutered === false ? "✓ Vacinado · Castração pendente" : "✓ Castrado · Vacinado"}
         </span>
         <ExpandableDescription text={pet.description} />
         <AdoptButton petId={pet.id} petName={pet.name} />
