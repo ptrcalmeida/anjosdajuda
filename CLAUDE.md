@@ -17,7 +17,10 @@ Stack: Next.js 16.2.1 + TypeScript + Tailwind CSS v4 + Stripe.
 - `#FF6B4A` — orange (primary CTA buttons)
 
 ## Data
-- Pet data: `src/data/pets.json` — schema: id, name, species, gender, age (number|null), description, photo (string|null), status, featured
+- Pet data: `src/data/pets.json` — schema: id, name, species, gender, age (number|null), age_label (string|optional), neutered (boolean|optional, default true), description, photo (string|null), status, featured
+- `status` values: `"available"` | `"adopted"` | `"fostered"` — only `"available"` shows in gallery
+- `neutered: false` shows "✓ Vacinado · Castração pendente" badge instead of "✓ Castrado · Vacinado"
+- `age_label` overrides the age number display (e.g. "2 meses")
 - Pet photos served from: `public/pets/`
 - Story/ONG photos served from: `public/story/`
 - Source/working photos (NOT served): `src/components/pets/` and `src/components/stock images/`
@@ -32,7 +35,9 @@ Stack: Next.js 16.2.1 + TypeScript + Tailwind CSS v4 + Stripe.
 - `src/components/layout/Header.tsx` — sticky nav, text logo "ONG Anjos d'Ajuda" (no image)
 - `src/components/layout/Footer.tsx` — footer with social links
 - `src/components/home/FoodPartnership.tsx` — corporate food donation section
-- `src/components/pets/AdoptButton.tsx` — client button with Google Ads conversion tracking
+- `src/components/pets/AdoptButton.tsx` — opens WhatsApp with pre-filled "Quero adotar [Nome]" message + Google Ads conversion tracking
+- `src/components/pets/ExpandableDescription.tsx` — client component for line-clamp-3 + "Ler mais" toggle
+- `src/components/pets/PetCard.tsx` — renders pet cards with conditional neutered badge
 
 ## Stripe integration
 - One-time: card (BR + INTL) — PIX code ready but not yet activated in Stripe Dashboard
@@ -78,6 +83,7 @@ Stack: Next.js 16.2.1 + TypeScript + Tailwind CSS v4 + Stripe.
 
 ## SEO implemented
 - Schema.org: NGO + nonprofitStatus + areaServed + DonateAction (/doe) + FAQPage (/adote)
+- Physical address removed from all pages and schema — only city/state shown
 - sitemap.ts + robots.ts in place
 - Hero H1 has sr-only location keyword appended
 - /adote H1: "Adote um cão ou gato em Arraial d'Ajuda"
