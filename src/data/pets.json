@@ -396,6 +396,45 @@
     "featured": false
   },
   {
+    "id": "acafrao",
+    "name": "Açafrão",
+    "species": "Gato",
+    "gender": "Macho",
+    "age": null,
+    "age_label": "filhote",
+    "neutered": false,
+    "description": "Laranjinha vivo e curioso, Açafrão é um dos filhotes da Pitanga. Ainda pequenininho, já explora o mundo com aquela energia típica de quem tem tudo pela frente. Procura um lar cheio de paciência e muita brincadeira.",
+    "photo": "/pets/pitanga.jpg",
+    "status": "available",
+    "featured": false
+  },
+  {
+    "id": "ambar",
+    "name": "Âmbar",
+    "species": "Gato",
+    "gender": "Fêmea",
+    "age": null,
+    "age_label": "filhote",
+    "neutered": false,
+    "description": "Âmbar é laranja e luminosa — o nome escolheu ela. Filhote da Pitanga, delicada e afetiva, já demonstra que vai ser uma gata de colo. Procura um lar tranquilo para crescer e florescer.",
+    "photo": "/pets/pitanga.jpg",
+    "status": "available",
+    "featured": false
+  },
+  {
+    "id": "fumaca",
+    "name": "Fumaça",
+    "species": "Gato",
+    "gender": "Fêmea",
+    "age": null,
+    "age_label": "filhote",
+    "neutered": false,
+    "description": "A única tabby cinza da ninhada, Fumaça se destaca entre os irmãos laranjos. Filhote da Pitanga, tem um olhar pensativo e um jeitinho independente que conquista devagar — mas conquista fundo.",
+    "photo": "/pets/pitanga.jpg",
+    "status": "available",
+    "featured": false
+  },
+  {
     "id": "pitanga",
     "name": "Pitanga",
     "species": "Gato",
