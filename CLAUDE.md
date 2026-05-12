@@ -20,7 +20,9 @@ Stack: Next.js 16.2.1 + TypeScript + Tailwind CSS v4 + Stripe.
 - Pet data: `src/data/pets.json` — schema: id, name, species, gender, age (number|null), age_label (string|optional), neutered (boolean|optional, default true), description, photo (string|null), status, featured
 - `status` values: `"available"` | `"adopted"` | `"fostered"` — only `"available"` shows in gallery
 - `neutered: false` shows "✓ Vacinado · Castração pendente" badge instead of "✓ Castrado · Vacinado"
-- `age_label` overrides the age number display (e.g. "2 meses")
+- `age_label` overrides the age number display (e.g. "2 meses", "filhote")
+- ~55 pets currently in pets.json (2026-04-23). Recent additions: Rosa + litter (Pimenta, Ursa, Tinta, Noite, Leite, Sombra), Pitanga (cat mother) + kittens (Açafrão, Âmbar, Fumaça), Bento & Zequinha, Gengibre, Nina, Flocos, Nala (updated), Sansão, Joaninha (fostered)
+- Filhotes share group photo until individual photos are available — update photo field when new shots come in
 - Pet photos served from: `public/pets/`
 - Story/ONG photos served from: `public/story/`
 - Source/working photos (NOT served): `src/components/pets/` and `src/components/stock images/`
