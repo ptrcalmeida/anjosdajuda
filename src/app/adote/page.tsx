@@ -108,48 +108,61 @@ export default function AdotePage() {
       </SectionWrapper>
 
       {/* Adopted */}
-      {adopted.length > 0 && (
-        <section className="bg-[#FAF8FF] py-16 px-4 border-t border-[#E9D5FF]">
-          <div className="max-w-6xl mx-auto">
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#7E22CE] mb-2">
-              Já encontraram um lar
+      <section className="bg-[#1A103C] py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          {/* Hero stat */}
+          <div className="text-center mb-14">
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#C084FC] mb-4">
+              13 anos de adoção responsável
             </p>
-            <h2 className="text-2xl font-black text-[#1A103C] mb-2">
-              {adopted.length} adotados
-            </h2>
-            <p className="text-sm text-[#7C6B8E] mb-10">
-              Cada um desses animais passou pela Anjos d&apos;Ajuda e hoje vive
-              com uma família que os escolheu. Isso só foi possível graças a
-              quem doou, voluntariou e compartilhou.
+            <p className="text-8xl md:text-9xl font-black text-white leading-none mb-3">
+              700<span className="text-[#C084FC]">+</span>
             </p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-              {adopted.map((pet) => (
-                <div key={pet.id} className="relative group">
-                  <div className="aspect-square rounded-xl overflow-hidden bg-[#F3E8FF]">
-                    {pet.photo ? (
-                      <img
-                        src={pet.photo}
-                        alt={pet.name}
-                        className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
-                      />
-                    ) : (
-                      <div className="w-full h-full flex items-center justify-center">
-                        <span className="text-4xl font-black text-[#7E22CE]/10">{pet.name[0]}</span>
-                      </div>
-                    )}
-                    <div className="absolute inset-0 bg-[#1A103C]/40 flex items-end rounded-xl">
-                      <div className="p-3 w-full">
-                        <p className="text-white font-bold text-sm leading-tight">{pet.name}</p>
-                        <p className="text-[#C084FC] text-xs font-semibold">Adotado ✓</p>
+            <p className="text-xl font-bold text-white/70 mb-4">
+              animais adotados desde 2013
+            </p>
+            <p className="text-sm text-white/40 max-w-lg mx-auto leading-relaxed">
+              Cada adoção é o resultado de voluntários, doadores e famílias que
+              acreditaram. Abaixo, os animais acompanhados digitalmente a partir
+              de 2026 — uma fração da história, mas a mais recente.
+            </p>
+          </div>
+
+          {/* Recent tracked adoptions */}
+          {adopted.length > 0 && (
+            <>
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#C084FC] mb-6">
+                Adotados recentemente — acompanhados desde 2026
+              </p>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                {adopted.map((pet) => (
+                  <div key={pet.id} className="relative group">
+                    <div className="aspect-square rounded-xl overflow-hidden bg-[#2D1A4A]">
+                      {pet.photo ? (
+                        <img
+                          src={pet.photo}
+                          alt={pet.name}
+                          className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
+                        />
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center">
+                          <span className="text-4xl font-black text-white/10">{pet.name[0]}</span>
+                        </div>
+                      )}
+                      <div className="absolute inset-0 bg-[#1A103C]/50 flex items-end rounded-xl">
+                        <div className="p-3 w-full">
+                          <p className="text-white font-bold text-sm leading-tight">{pet.name}</p>
+                          <p className="text-[#C084FC] text-xs font-semibold">Adotado ✓</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
+                ))}
+              </div>
+            </>
+          )}
+        </div>
+      </section>
     </>
   );
 }
