@@ -271,7 +271,7 @@
     "age": null,
     "description": "Sansão foi encontrado com um corte enorme na cabeça e cheio de bicheiras — e sobreviveu. Jovem e cheio de energia, ele latia forte antes mesmo de se recuperar, como se quisesse avisar que não ia desistir. Brincalhão, intenso e com aquele latido que justifica o nome. Castrado e pronto pra um lar que acompanhe seu ritmo.",
     "photo": "/pets/sansao.jpg",
-    "status": "available",
+    "status": "adopted",
     "featured": false
   },
   {
@@ -370,7 +370,7 @@
     "age": null,
     "description": "Caramelo é muito dócil — simples assim. Pelagem dourada, olhar manso e temperamento que faz qualquer casa parecer mais leve. Pronta para encontrar seu lar.",
     "photo": "/pets/caramelo.jpg",
-    "status": "available",
+    "status": "adopted",
     "featured": false
   },
   {
@@ -520,7 +520,7 @@
     "neutered": false,
     "description": "Clarinho entre os irmãos escuros, Leite chama atenção só de aparecer. Filho da Rosa, pelagem creme e expressão curiosa — é o tipo de cachorro que faz a sala parecer mais alegre.",
     "photo": "/pets/leite.jpg",
-    "status": "available",
+    "status": "adopted",
     "featured": false
   },
   {
