@@ -57,6 +57,7 @@ const steps = [
 
 export default function AdotePage() {
   const available = petsData.filter((p) => p.status === "available");
+  const adopted = petsData.filter((p) => p.status === "adopted");
 
   return (
     <>
@@ -105,6 +106,50 @@ export default function AdotePage() {
       <SectionWrapper>
         <PetGrid pets={available} />
       </SectionWrapper>
+
+      {/* Adopted */}
+      {adopted.length > 0 && (
+        <section className="bg-[#FAF8FF] py-16 px-4 border-t border-[#E9D5FF]">
+          <div className="max-w-6xl mx-auto">
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#7E22CE] mb-2">
+              Já encontraram um lar
+            </p>
+            <h2 className="text-2xl font-black text-[#1A103C] mb-2">
+              {adopted.length} adotados
+            </h2>
+            <p className="text-sm text-[#7C6B8E] mb-10">
+              Cada um desses animais passou pela Anjos d&apos;Ajuda e hoje vive
+              com uma família que os escolheu. Isso só foi possível graças a
+              quem doou, voluntariou e compartilhou.
+            </p>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+              {adopted.map((pet) => (
+                <div key={pet.id} className="relative group">
+                  <div className="aspect-square rounded-xl overflow-hidden bg-[#F3E8FF]">
+                    {pet.photo ? (
+                      <img
+                        src={pet.photo}
+                        alt={pet.name}
+                        className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
+                      />
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center">
+                        <span className="text-4xl font-black text-[#7E22CE]/10">{pet.name[0]}</span>
+                      </div>
+                    )}
+                    <div className="absolute inset-0 bg-[#1A103C]/40 flex items-end rounded-xl">
+                      <div className="p-3 w-full">
+                        <p className="text-white font-bold text-sm leading-tight">{pet.name}</p>
+                        <p className="text-[#C084FC] text-xs font-semibold">Adotado ✓</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
     </>
   );
 }
