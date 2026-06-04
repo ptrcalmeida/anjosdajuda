@@ -258,6 +258,36 @@ export default function SobrePage() {
         </div>
       </section>
 
+      {/* 2026 pattern alert */}
+      <section className="bg-[#FAF8FF] py-16 px-4 border-y border-[#E9D5FF]">
+        <div className="max-w-3xl mx-auto">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#7E22CE] mb-4">
+            Um padrão preocupante
+          </p>
+          <h2 className="text-3xl font-black text-[#1A103C] mb-5">
+            2026: mais filhotes abandonados do que nos últimos anos.
+          </h2>
+          <p className="text-lg text-[#7C6B8E] leading-relaxed mb-4">
+            Este ano, o volume de cães e gatos abandonados em Arraial d&apos;Ajuda
+            superou o que observamos nos anos recentes. Não temos certeza das causas
+            — pode ser reflexo de políticas públicas, mudanças na gestão municipal,
+            ou simplesmente o acúmulo de anos sem investimento suficiente em
+            educação e castração. Provavelmente é uma combinação de fatores.
+          </p>
+          <p className="text-lg text-[#7C6B8E] leading-relaxed mb-4">
+            O que sabemos é que esses padrões existem e têm consequências reais:
+            mais animais nas ruas, voluntários sobrecarregados, recursos cada vez
+            mais insuficientes.
+          </p>
+          <p className="text-lg text-[#7C6B8E] leading-relaxed">
+            Bem-estar animal é uma questão de saúde pública, de educação e de
+            gestão urbana. Esses temas merecem atenção — e nas próximas eleições,
+            vale perguntar: o candidato que você vai apoiar tem um compromisso real
+            com o bem-estar dos animais e com a comunidade que cuida deles?
+          </p>
+        </div>
+      </section>
+
       {/* CTA dark */}
       <section className="bg-[#1A103C] py-16 px-4">
         <div className="max-w-3xl mx-auto text-center">
