@@ -31,12 +31,14 @@ Stack: Next.js 16.2.1 + TypeScript + Tailwind CSS v4 + Stripe.
 - `src/app/page.tsx` — homepage sections order: Hero → FeaturedPets → Stats → MissionPillars → ImpactChain → RescueHighlight → FoodPartnership → Testimonial → FinalCTA
 - `src/app/doe/page.tsx` — donation page (Stripe widget + PIX + IBAN)
 - `src/app/sobre/page.tsx` — about page
-- `src/app/adote/page.tsx` — adoption gallery
+- `src/app/adote/page.tsx` — adoption gallery + adopted pets section (700+ stat)
 - `src/app/api/checkout/route.ts` — Stripe Checkout Session API route
 - `src/components/ui/DonationWidget.tsx` — client donation widget
-- `src/components/layout/Header.tsx` — sticky nav, text logo "ONG Anjos d'Ajuda" (no image)
+- `src/components/layout/Header.tsx` — sticky nav, text logo "ONG Anjos d'Ajuda", includes UrgencyBar
+- `src/components/layout/UrgencyBar.tsx` — orange urgency strip above header (dismissible, update monthly: month name + R$ goal)
 - `src/components/layout/Footer.tsx` — footer with social links
 - `src/components/home/FoodPartnership.tsx` — corporate food donation section
+- `src/components/home/Testimonial.tsx` — 3-column testimonials (Patricia E. de Almeida · Voluntária Médica Veterinária + 2 anônimos)
 - `src/components/pets/AdoptButton.tsx` — opens WhatsApp with pre-filled "Quero adotar [Nome]" message + Google Ads conversion tracking
 - `src/components/pets/ExpandableDescription.tsx` — client component for line-clamp-3 + "Ler mais" toggle
 - `src/components/pets/PetCard.tsx` — renders pet cards with conditional neutered badge
