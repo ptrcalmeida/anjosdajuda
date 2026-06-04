@@ -35,12 +35,12 @@ export default function Hero() {
           className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed"
           style={{ textShadow: "0 1px 8px rgba(0,0,0,0.5)" }}
         >
-          A maioria das ONGs resgata os sintomas. Nós atacamos a causa —
-          castrando, educando e construindo uma comunidade que não abandona.
-          Há 13 anos em Arraial d&apos;Ajuda, sem nenhum apoio do poder público.
+          Há 13 anos fazemos o trabalho que o poder público deveria fazer —
+          sem receber um centavo para isso. Cada mutirão de castração, cada
+          animal resgatado, cada criança educada depende de você.
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
           <Link
             href="/doe"
             className="w-full sm:w-auto inline-flex items-center justify-center rounded-lg px-8 py-4 text-lg font-bold bg-[#FF6B4A] text-white hover:bg-[#E55530] transition-colors"
@@ -54,6 +54,13 @@ export default function Hero() {
             Adote um Pet
           </Link>
         </div>
+        <Link
+          href="/adote"
+          className="text-sm text-white/60 hover:text-white transition-colors underline underline-offset-4"
+          style={{ textShadow: "0 1px 8px rgba(0,0,0,0.5)" }}
+        >
+          Ou descubra quem está esperando →
+        </Link>
       </div>
 
       {/* Scroll hint */}

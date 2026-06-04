@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { UrgencyBar } from "./UrgencyBar";
 
 const NAV_LINKS = [
   { href: "/sobre", label: "Quem Somos" },
@@ -16,6 +17,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-[#E9D5FF]">
+      <UrgencyBar />
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="text-sm font-black text-[#1A103C] tracking-tight hover:text-[#7E22CE] transition-colors">

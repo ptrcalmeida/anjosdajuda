@@ -40,7 +40,7 @@ export default function Footer() {
               <Image src="/logo.jpg" alt="Anjos d'Ajuda" width={64} height={64} className="rounded-lg bg-white p-1" />
             </div>
             <p className="text-white/60 text-sm leading-relaxed mb-6 max-w-xs">
-              Salvando Vidas, Uma Pata de Cada Vez. Resgatamos, esterilizamos e encontramos lares para animais abandonados em Arraial d&apos;Ajuda, Bahia.
+              13 anos atacando a causa — não o sintoma. Sem salários. Sem apoio público. Só propósito.
             </p>
             <div className="flex gap-4">
               <a

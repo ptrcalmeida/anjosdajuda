@@ -11,10 +11,14 @@ export default function FinalCTA() {
           Doe todo mês.<br />
           <span className="text-[#C084FC]">Mude para sempre.</span>
         </h2>
-        <p className="text-lg text-white/60 mb-10 leading-relaxed">
+        <p className="text-lg text-white/60 mb-5 leading-relaxed">
           Nossa maior dificuldade é a imprevisibilidade. Uma doação recorrente
           — mesmo de R$20 — transforma instabilidade em planejamento e nos
           permite castrar mais, alimentar mais, resgatar mais.
+        </p>
+        <p className="text-sm text-white/40 mb-10 leading-relaxed max-w-lg mx-auto">
+          Hoje, 2 doadores mensais sustentam 1 castração por mês. Com 30, faríamos
+          um mutirão completo. Com 100, acabaríamos com o abandono em Arraial.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link

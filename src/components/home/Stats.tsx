@@ -1,8 +1,8 @@
 const STATS = [
-  { number: "10.000+", label: "Animais Castrados" },
-  { number: "700+", label: "Adotados" },
-  { number: "30+", label: "Voluntários" },
-  { number: "13", label: "Anos de Dedicação" },
+  { number: "10.000+", label: "Animais Castrados", context: "Cada um evitou até 67 novos abandonos" },
+  { number: "700+", label: "Adotados", context: "Famílias em todo o Brasil" },
+  { number: "30+", label: "Voluntários", context: "Sem salário. Por convicção." },
+  { number: "13", label: "Anos de Dedicação", context: "Sem parar. Sem apoio público." },
 ];
 
 export default function Stats() {
@@ -15,8 +15,11 @@ export default function Stats() {
               <p className="text-5xl md:text-6xl font-black text-[#1A103C] leading-none mb-2">
                 {stat.number}
               </p>
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#7C6B8E]">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#7C6B8E] mb-1">
                 {stat.label}
+              </p>
+              <p className="text-xs text-[#7E22CE] font-medium leading-snug">
+                {stat.context}
               </p>
             </div>
           ))}

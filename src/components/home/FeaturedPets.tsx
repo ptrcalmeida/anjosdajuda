@@ -1,6 +1,7 @@
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 import petsData from "@/data/pets.json";
+import { AdoptButton } from "@/components/pets/AdoptButton";
 
 interface Pet {
   id: string;
@@ -8,32 +9,36 @@ interface Pet {
   species: string;
   gender: string;
   age: number | null;
+  age_label?: string;
   description: string;
   photo: string | null;
   status: string;
   featured: boolean;
 }
 
-const featured = (petsData as Pet[]).filter((p) => p.featured).slice(0, 3);
+const featured = (petsData as Pet[]).filter((p) => p.featured && p.status === "available").slice(0, 3);
 
-function ageLabel(age: number | null): string {
-  if (age === null) return "Idade desconhecida";
-  if (age < 1) return "Filhote";
-  if (age === 1) return "1 ano";
-  return `${age} anos`;
+function ageLabel(pet: Pet): string {
+  if (pet.age_label) return pet.age_label;
+  if (pet.age === null) return "Idade desconhecida";
+  if (pet.age === 1) return "1 ano";
+  return `${pet.age} anos`;
 }
 
 export default function FeaturedPets() {
   return (
     <section className="bg-white py-20 px-4">
       <div className="max-w-6xl mx-auto">
-        <div className="mb-12">
+        <div className="mb-4">
           <p className="text-xs font-semibold uppercase tracking-widest text-[#7E22CE] mb-3">
             Adoção Responsável
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1A103C]">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1A103C] mb-2">
             Cada um esperou tempo demais.
           </h2>
+          <p className="text-[#7C6B8E] mb-10">
+            Nenhum deles tem certeza de amanhã. Você pode mudar isso.
+          </p>
         </div>
 
         {/* Cards */}
@@ -66,7 +71,7 @@ export default function FeaturedPets() {
               <div className="p-5">
                 <div className="flex items-baseline justify-between mb-1">
                   <h3 className="text-lg font-bold text-[#1A103C]">{pet.name}</h3>
-                  <span className="text-xs text-[#7C6B8E]">{ageLabel(pet.age)}</span>
+                  <span className="text-xs text-[#7C6B8E]">{ageLabel(pet)}</span>
                 </div>
                 <p className="text-xs font-medium text-[#7E22CE] mb-3">
                   {pet.species} · {pet.gender}
@@ -74,12 +79,7 @@ export default function FeaturedPets() {
                 <p className="text-sm text-[#7C6B8E] leading-relaxed mb-5 line-clamp-2">
                   {pet.description}
                 </p>
-                <Link
-                  href="/adote"
-                  className="inline-flex items-center justify-center w-full rounded-lg px-4 py-2.5 text-sm font-semibold border-2 border-[#7E22CE] text-[#7E22CE] hover:bg-[#F3E8FF] transition-colors"
-                >
-                  Quero Adotar
-                </Link>
+                <AdoptButton petId={pet.id} petName={pet.name} />
               </div>
             </div>
           ))}

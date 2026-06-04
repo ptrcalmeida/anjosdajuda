@@ -78,8 +78,11 @@ export default function AdotePage() {
             castrados, vacinados e cheios de amor pra dar. Adoção responsável
             para todo o Brasil.
           </p>
-          <p className="text-sm font-semibold text-[#7E22CE]">
+          <p className="text-sm font-semibold text-[#7E22CE] mb-1">
             {available.length} animais aguardando um lar
+          </p>
+          <p className="text-sm text-[#7C6B8E]">
+            Cada um deles está em lar temporário — a cargo de voluntários que arcam com os custos do próprio bolso.
           </p>
         </div>
       </SectionWrapper>
