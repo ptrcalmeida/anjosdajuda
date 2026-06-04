@@ -4,18 +4,22 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { X } from "lucide-react";
 
-const STORAGE_KEY = "urgency_bar_dismissed_2026_04";
-
 export function UrgencyBar() {
   const [visible, setVisible] = useState(false);
+  const [month, setMonth] = useState("");
+  const [storageKey, setStorageKey] = useState("");
 
   useEffect(() => {
-    const dismissed = localStorage.getItem(STORAGE_KEY);
-    if (!dismissed) setVisible(true);
+    const now = new Date();
+    const monthName = now.toLocaleString("pt-BR", { month: "long" });
+    const key = `urgency_bar_dismissed_${now.getFullYear()}_${now.getMonth()}`;
+    setMonth(monthName.charAt(0).toUpperCase() + monthName.slice(1));
+    setStorageKey(key);
+    if (!localStorage.getItem(key)) setVisible(true);
   }, []);
 
   function dismiss() {
-    localStorage.setItem(STORAGE_KEY, "1");
+    localStorage.setItem(storageKey, "1");
     setVisible(false);
   }
 
@@ -24,8 +28,8 @@ export function UrgencyBar() {
   return (
     <div className="bg-[#FF6B4A] text-white px-4 py-2.5 flex items-center justify-between gap-4">
       <p className="text-sm font-semibold leading-tight">
-        <span className="font-black">⚡ Abril —</span>{" "}
-        precisamos de R$5.700 para o próximo mutirão de castração.
+        <span className="font-black">⚡ {month} —</span>{" "}
+        cada doação garante que o próximo mutirão de castração aconteça.
       </p>
       <div className="flex items-center gap-3 shrink-0">
         <Link
