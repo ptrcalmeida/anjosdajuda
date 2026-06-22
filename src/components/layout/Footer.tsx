@@ -71,6 +71,19 @@ export default function Footer() {
                 <YoutubeIcon className="w-5 h-5" />
               </a>
             </div>
+            <div className="mt-6 flex items-center gap-3">
+              <Image
+                src="/story/febraca-selo.png"
+                alt="Rede FEBRACA — Organização Afiliada"
+                width={52}
+                height={52}
+                className="rounded-full opacity-80"
+              />
+              <p className="text-xs text-white/40 leading-tight">
+                Organização afiliada à<br />
+                <span className="text-white/60 font-semibold">Rede FEBRACA</span>
+              </p>
+            </div>
           </div>
 
           {/* Links */}

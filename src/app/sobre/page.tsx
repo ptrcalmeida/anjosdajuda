@@ -258,6 +258,35 @@ export default function SobrePage() {
         </div>
       </section>
 
+      {/* FEBRACA affiliation */}
+      <section className="bg-white py-14 px-4 border-b border-[#E9D5FF]">
+        <div className="max-w-3xl mx-auto flex flex-col sm:flex-row items-center gap-8">
+          <Image
+            src="/story/febraca-selo.png"
+            alt="Rede FEBRACA — Organização Afiliada"
+            width={120}
+            height={120}
+            className="rounded-full shrink-0"
+          />
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#7E22CE] mb-2">
+              Afiliação institucional
+            </p>
+            <h2 className="text-2xl font-black text-[#1A103C] mb-3">
+              Membro da Rede FEBRACA
+            </h2>
+            <p className="text-[#7C6B8E] leading-relaxed">
+              A Anjos d&apos;Ajuda é organização afiliada à{" "}
+              <strong className="text-[#1A103C]">FEBRACA — Federação Brasileira da Causa Animal</strong>,
+              rede nacional que reúne ONGs comprometidas com o bem-estar animal e
+              a promoção da guarda responsável em todo o Brasil.
+              A afiliação reforça nosso compromisso com boas práticas,
+              transparência e articulação com o movimento nacional de proteção animal.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* 2026 pattern alert */}
       <section className="bg-[#FAF8FF] py-16 px-4 border-y border-[#E9D5FF]">
         <div className="max-w-3xl mx-auto">
