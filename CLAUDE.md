@@ -21,7 +21,7 @@ Stack: Next.js 16.2.1 + TypeScript + Tailwind CSS v4 + Stripe.
 - `status` values: `"available"` | `"adopted"` | `"fostered"` — only `"available"` shows in gallery
 - `neutered: false` shows "✓ Vacinado · Castração pendente" badge instead of "✓ Castrado · Vacinado"
 - `age_label` overrides the age number display (e.g. "2 meses", "filhote")
-- ~55 pets currently in pets.json (2026-04-23). Recent additions: Rosa + litter (Pimenta, Ursa, Tinta, Noite, Leite, Sombra), Pitanga (cat mother) + kittens (Açafrão, Âmbar, Fumaça), Bento & Zequinha, Gengibre, Nina, Flocos, Nala (updated), Sansão, Joaninha (fostered)
+- ~55 pets currently in pets.json (2026-06-22). Recent additions: Rosa + litter (Pimenta, Ursa, Tinta, Noite, Leite, Sombra), Pitanga (cat mother) + kittens (Açafrão, Âmbar, Fumaça), Gengibre, Nina, Flocos, Nala (updated), Sansão, Joaninha (fostered), Esperança (featured, chihuahua mix). Bento & Faísca → adopted (2026-06-22)
 - Filhotes share group photo until individual photos are available — update photo field when new shots come in
 - Pet photos served from: `public/pets/`
 - Story/ONG photos served from: `public/story/`
@@ -30,13 +30,13 @@ Stack: Next.js 16.2.1 + TypeScript + Tailwind CSS v4 + Stripe.
 ## Key files
 - `src/app/page.tsx` — homepage sections order: Hero → FeaturedPets → Stats → MissionPillars → ImpactChain → RescueHighlight → FoodPartnership → Testimonial → FinalCTA
 - `src/app/doe/page.tsx` — donation page (Stripe widget + PIX + IBAN)
-- `src/app/sobre/page.tsx` — about page
+- `src/app/sobre/page.tsx` — about page. Sections: Lead → Foto → Fundadora → Stats → O que fazemos → Transparência → FEBRACA → 2026 Pattern → CTA
 - `src/app/adote/page.tsx` — adoption gallery + adopted pets section (700+ stat)
 - `src/app/api/checkout/route.ts` — Stripe Checkout Session API route
 - `src/components/ui/DonationWidget.tsx` — client donation widget
 - `src/components/layout/Header.tsx` — sticky nav, text logo "ONG Anjos d'Ajuda", includes UrgencyBar
-- `src/components/layout/UrgencyBar.tsx` — orange urgency strip above header (dismissible, update monthly: month name + R$ goal)
-- `src/components/layout/Footer.tsx` — footer with social links
+- `src/components/layout/UrgencyBar.tsx` — orange urgency strip above header (fully evergreen — auto-generates month from JS Date, auto-rotates localStorage key by year+month, no manual updates needed)
+- `src/components/layout/Footer.tsx` — footer with social links + FEBRACA SELO badge (public/story/febraca-selo.png)
 - `src/components/home/FoodPartnership.tsx` — corporate food donation section
 - `src/components/home/Testimonial.tsx` — 3-column testimonials (Patricia E. de Almeida · Voluntária Médica Veterinária + 2 anônimos)
 - `src/components/pets/AdoptButton.tsx` — opens WhatsApp with pre-filled "Quero adotar [Nome]" message + Google Ads conversion tracking
