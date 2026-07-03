@@ -21,7 +21,8 @@ Stack: Next.js 16.2.1 + TypeScript + Tailwind CSS v4 + Stripe.
 - `status` values: `"available"` | `"adopted"` | `"fostered"` — only `"available"` shows in gallery
 - `neutered: false` shows "✓ Vacinado · Castração pendente" badge instead of "✓ Castrado · Vacinado"
 - `age_label` overrides the age number display (e.g. "2 meses", "filhote")
-- ~55 pets currently in pets.json (2026-06-22). Recent additions: Rosa + litter (Pimenta, Ursa, Tinta, Noite, Leite, Sombra), Pitanga (cat mother) + kittens (Açafrão, Âmbar, Fumaça), Gengibre, Nina, Flocos, Nala (updated), Sansão, Joaninha (fostered), Esperança (featured, chihuahua mix). Bento & Faísca → adopted (2026-06-22)
+- ~65 pets currently in pets.json (2026-07-03). Recent additions: Lobinho (featured, first entry, cream/white dog), 8 litter puppies with placeholder names (Filhote Fêmea Caramelo/Preta/Marrom/Tigrada/Preta 2, Filhote Macho Chocolate/Preto/Lobo) — permanent names TBD by ONG. Earlier: Rosa + litter (Pimenta, Ursa, Tinta, Noite, Leite, Sombra), Pitanga + kittens (Açafrão, Âmbar, Fumaça), Gengibre, Nina, Flocos, Sansão, Joaninha (fostered), Esperança (featured, chihuahua mix). Bento & Faísca → adopted (2026-06-22)
+- FeaturedPets shows first 3 pets with `featured: true && status: "available"` in file order — Lobinho is currently first (inserted at top of array)
 - Filhotes share group photo until individual photos are available — update photo field when new shots come in
 - Pet photos served from: `public/pets/`
 - Story/ONG photos served from: `public/story/`
