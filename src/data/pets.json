@@ -9,8 +9,8 @@
     "neutered": false,
     "description": "Lobinho chegou assustado, magro, sem saber muito bem o que o mundo reservava para ele. Mas com um olhar que não mente: quieto, atento, cheio de confiança esperando pelo lar certo. Está se recuperando bem e pronto para recomeçar.",
     "photo": "/pets/lobinho.jpg",
-    "status": "available",
-    "featured": true
+    "status": "adopted",
+    "featured": false
   },
   {
     "id": "barao",
@@ -251,8 +251,8 @@
     "age": null,
     "description": "Pérola foi encontrada no mangue de Arraial d'Ajuda com uma pata necrosada, quase sem chances. Seu nome veio de quem a viu renascer: até as ostras mais humildes guardam pérolas. Castrada e em recuperação, ela está pronta para um lar que cuide dela como ela merece.",
     "photo": "/pets/perola.jpg",
-    "status": "available",
-    "featured": true
+    "status": "adopted",
+    "featured": false
   },
   {
     "id": "dalila",
@@ -295,7 +295,7 @@
     "age": null,
     "description": "Carambola é do tipo que escolhe o melhor lugar da casa e não larga mais. Encontrou as ruas de Arraial d'Ajuda antes de ser resgatada, e agora prefere janelas ensolaradas e sossego. Castrada.",
     "photo": "/pets/carambola.jpg",
-    "status": "available",
+    "status": "adopted",
     "featured": false
   },
   {
@@ -317,7 +317,7 @@
     "age": null,
     "description": "Pequenininha e de olhos azuis, Coco chegou ao mundo com tudo pela frente. Tabby discreta com peito branco, ela já descobriu que sofás são melhores que calçadas. Procura um lar com paciência e carinho.",
     "photo": "/pets/coco.jpg",
-    "status": "available",
+    "status": "adopted",
     "featured": false
   },
   {
@@ -418,7 +418,7 @@
     "neutered": false,
     "description": "Laranjinha vivo e curioso, Açafrão é um dos filhotes da Pitanga. Ainda pequenininho, já explora o mundo com aquela energia típica de quem tem tudo pela frente. Procura um lar cheio de paciência e muita brincadeira.",
     "photo": "/pets/pitanga.jpg",
-    "status": "available",
+    "status": "adopted",
     "featured": false
   },
   {
@@ -431,7 +431,7 @@
     "neutered": false,
     "description": "Âmbar é laranja e luminosa — o nome escolheu ela. Filhote da Pitanga, delicada e afetiva, já demonstra que vai ser uma gata de colo. Procura um lar tranquilo para crescer e florescer.",
     "photo": "/pets/pitanga.jpg",
-    "status": "available",
+    "status": "adopted",
     "featured": false
   },
   {
@@ -444,7 +444,7 @@
     "neutered": false,
     "description": "A única tabby cinza da ninhada, Fumaça se destaca entre os irmãos laranjos. Filhote da Pitanga, tem um olhar pensativo e um jeitinho independente que conquista devagar — mas conquista fundo.",
     "photo": "/pets/pitanga.jpg",
-    "status": "available",
+    "status": "adopted",
     "featured": false
   },
   {
@@ -456,7 +456,7 @@
     "neutered": false,
     "description": "Pitanga é uma gatinha que virou mãe antes de ter um lar. Chegou grávida às mãos dos voluntários e pariu três filhotes — dois laranjas e um tabby cinza — que já estão crescendo sob seus cuidados. Dócil e confiante. Procura um lar que a acolha agora e a castre assim que os filhotes forem desmamados.",
     "photo": "/pets/pitanga.jpg",
-    "status": "available",
+    "status": "adopted",
     "featured": false
   },
   {
@@ -507,7 +507,7 @@
     "neutered": false,
     "description": "Tinta é preto do focinho à pata — intenso desde pequenininho. Filho da Rosa, anda com confiança e olha o mundo como se tivesse tudo sob controle. Vai precisar de espaço e energia para gastar.",
     "photo": "/pets/tinta.jpg",
-    "status": "available",
+    "status": "adopted",
     "featured": false
   },
   {
@@ -520,7 +520,7 @@
     "neutered": false,
     "description": "Escuro e redondinho, Noite ainda está descobrindo o mundo fora do ninho. Filho da Rosa, já demonstra curiosidade e docilidade. Um companheiro em formação que vai crescer junto com quem o adotar.",
     "photo": "/pets/noite.jpg",
-    "status": "available",
+    "status": "adopted",
     "featured": false
   },
   {
@@ -546,7 +546,7 @@
     "neutered": false,
     "description": "Sombra é um dos caçulas da ninhada da Rosa. Escuro e compacto, já dá sinais de que vai ser um cachorro tranquilo e fiel. Está pronto para crescer ao lado de quem quiser fazer parte da sua história.",
     "photo": "/pets/sombra.jpg",
-    "status": "available",
+    "status": "adopted",
     "featured": false
   },
   {
@@ -605,7 +605,7 @@
     "age": null,
     "description": "Branquinho com manchas tabby e orelhas que parecem grandes demais pro tamanho do corpo — Flocos ainda está crescendo, mas a personalidade já chegou. Curioso, compacto e com aquele olhar azul de quem quer entender tudo. Procura um lar tranquilo pra chamar de seu.",
     "photo": "/pets/flocos.png",
-    "status": "available",
+    "status": "adopted",
     "featured": false
   },
   {
