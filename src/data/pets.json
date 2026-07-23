@@ -722,5 +722,44 @@
     "photo": "/pets/filhote-lobo-m.jpg",
     "status": "available",
     "featured": false
+  },
+  {
+    "id": "mel",
+    "name": "Mel",
+    "species": "Cão",
+    "gender": "Fêmea",
+    "age": null,
+    "age_label": "filhote",
+    "neutered": false,
+    "description": "Mel é caramelo do focinho à pata — e doce do mesmo jeito. Já está vacinada, vermifugada e com controle de ectoparasitas. Elegante e curiosa, ela levanta o queixo para o mundo como quem sabe que merece um lar à altura.",
+    "photo": "/pets/mel.jpg",
+    "status": "available",
+    "featured": false
+  },
+  {
+    "id": "bibi",
+    "name": "Bibi",
+    "species": "Cão",
+    "gender": "Fêmea",
+    "age": null,
+    "age_label": "3 meses",
+    "neutered": false,
+    "description": "Bibi é a menor das duas irmãs — porte pequeno, mas personalidade grande. Preta com detalhes caramelo, 3 meses, vacinada e vermifugada. Pode ser adotada com a irmã Munchkin ou separada.",
+    "photo": "/pets/bibi.jpg",
+    "status": "available",
+    "featured": false
+  },
+  {
+    "id": "munchkin",
+    "name": "Munchkin",
+    "species": "Cão",
+    "gender": "Fêmea",
+    "age": null,
+    "age_label": "3 meses",
+    "neutered": false,
+    "description": "Munchkin é porte médio, tricolor — preta, caramelo e branco — com aquele olhar atento de quem está descobrindo o mundo. 3 meses, vacinada e vermifugada. Irmã da Bibi: podem ser adotadas juntas ou separadas.",
+    "photo": "/pets/munchkin.jpg",
+    "status": "available",
+    "featured": false
   }
 ]
