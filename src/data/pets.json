@@ -398,17 +398,6 @@
     "featured": true
   },
   {
-    "id": "mel",
-    "name": "Mel",
-    "species": "Cão",
-    "gender": "Fêmea",
-    "age": null,
-    "description": "Mel vivia em um lixão — mas nunca perdeu a doçura. O nome diz tudo. Ela merece um lar que esteja à altura do amor que tem pra dar.",
-    "photo": "/pets/mel.jpg",
-    "status": "available",
-    "featured": false
-  },
-  {
     "id": "acafrao",
     "name": "Açafrão",
     "species": "Gato",
