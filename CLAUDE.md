@@ -21,12 +21,13 @@ Stack: Next.js 16.2.1 + TypeScript + Tailwind CSS v4 + Stripe.
 - `status` values: `"available"` | `"adopted"` | `"fostered"` — only `"available"` shows in gallery
 - `neutered: false` shows "✓ Vacinado · Castração pendente" badge instead of "✓ Castrado · Vacinado"
 - `age_label` overrides the age number display (e.g. "2 meses", "filhote")
-- ~64 pets currently in pets.json (2026-07-23). Recent additions: Mel (caramel female filhote, named by Claude), Bibi + Munchkin (sisters, 3 months, preto/caramelo/branco, can adopt together or separately). 6 remaining litter puppies (Filhote Fêmea Caramelo/Marrom/Tigrada, Filhote Macho Chocolate/Preto/Lobo) — permanent names TBD by ONG. Earlier additions now adopted: Lobinho, Pérola, Carambola, Coco, Açafrão, Âmbar, Fumaça, Pitanga, Tinta, Noite, Sombra, Flocos, Preta x2. Bento & Faísca → adopted (2026-06-22)
+- ~64 pets currently in pets.json (2026-08-02). Recent additions: Mel (caramel female filhote, named by Claude), Bibi + Munchkin (sisters, 3 months, preto/caramelo/branco, can adopt together or separately). 6 remaining litter puppies (Filhote Fêmea Caramelo/Marrom/Tigrada, Filhote Macho Chocolate/Preto/Lobo) — permanent names TBD by ONG. Earlier additions now adopted: Lobinho, Pérola, Carambola, Coco, Açafrão, Âmbar, Fumaça, Pitanga, Tinta, Noite, Sombra, Flocos, Preta x2. Bento & Faísca → adopted (2026-06-22)
 - FeaturedPets shows first 3 pets with `featured: true && status: "available"` in file order — currently Barão, Nala, Rapunzel (Lobinho adopted)
 - Filhotes share group photo until individual photos are available — update photo field when new shots come in
 - Pet photos served from: `public/pets/`
 - Story/ONG photos served from: `public/story/`
 - Source/working photos (NOT served): `src/components/pets/` and `src/components/stock images/`
+- Portrait/video-frame photos need square-cropping before commit — use PIL: `python3 -c "from PIL import Image; img=Image.open('src.jpg'); img.crop((left,top,right,bottom)).save('public/pets/name.jpg', quality=90)"`
 
 ## Key files
 - `src/app/page.tsx` — homepage sections order: Hero → FeaturedPets → Stats → MissionPillars → ImpactChain → RescueHighlight → FoodPartnership → Testimonial → FinalCTA
