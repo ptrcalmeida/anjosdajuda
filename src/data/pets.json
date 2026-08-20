@@ -97,8 +97,8 @@
     "age": null,
     "description": "Com seu pelo claro e ondulado, Rapunzel é pura magia à beira da piscina — mas sabe muito bem o que é viver na rua. Castrada, dócil e esperando alguém que abra o portão pra ela.",
     "photo": "/pets/rapunzel.jpg",
-    "status": "available",
-    "featured": true
+    "status": "adopted",
+    "featured": false
   },
   {
     "id": "zuma",
