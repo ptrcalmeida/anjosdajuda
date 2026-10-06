@@ -395,7 +395,7 @@
     "description": "Forte chegou em maio com ferimentos graves e tomado por parasitas. Sobreviveu — e o nome ficou. Com 1 ano, preto com peito branco, ele é prova de que força de vontade tem forma.",
     "photo": "/pets/forte.jpg",
     "status": "available",
-    "featured": true
+    "featured": false
   },
   {
     "id": "acafrao",
@@ -459,6 +459,18 @@
     "photo": "/pets/rosa.jpg",
     "status": "available",
     "featured": true
+  },
+  {
+    "id": "amora",
+    "name": "Amora",
+    "species": "Cão",
+    "gender": "Fêmea",
+    "age": 1,
+    "description": "Amora é branca com manchas pretas — doce por natureza, brincalhona quando ganha confiança, e um pouquinho tímida com quem não conhece ainda. Se dá muito bem com crianças e com outros cães. Está esperando por uma família que entenda o ritmo dela.",
+    "photo": "/pets/amora.jpg",
+    "status": "available",
+    "featured": true,
+    "neutered": true
   },
   {
     "id": "pimenta",
@@ -750,17 +762,5 @@
     "photo": "/pets/munchkin.jpg",
     "status": "available",
     "featured": false
-  },
-  {
-    "id": "amora",
-    "name": "Amora",
-    "species": "Cão",
-    "gender": "Fêmea",
-    "age": 1,
-    "description": "Amora é branca com manchas pretas — doce por natureza, brincalhona quando ganha confiança, e um pouquinho tímida com quem não conhece ainda. Se dá muito bem com crianças e com outros cães. Está esperando por uma família que entenda o ritmo dela.",
-    "photo": "/pets/amora.jpg",
-    "status": "available",
-    "featured": false,
-    "neutered": true
   }
 ]
