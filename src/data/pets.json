@@ -618,7 +618,7 @@
     "neutered": false,
     "description": "Filhote caramelo, dócil e curiosa. Nome definitivo a definir pela ONG. Procura lar com paciência e carinho para acompanhar seu crescimento.",
     "photo": "/pets/filhote-caramelo-f.jpg",
-    "status": "available",
+    "status": "adopted",
     "featured": false
   },
   {
@@ -644,7 +644,7 @@
     "neutered": false,
     "description": "Filhote marrom escura, compacta e cheia de energia. Nome definitivo a definir pela ONG. Procura lar com paciência e carinho para acompanhar seu crescimento.",
     "photo": "/pets/filhote-marrom-f.jpg",
-    "status": "available",
+    "status": "adopted",
     "featured": false
   },
   {
@@ -657,7 +657,7 @@
     "neutered": false,
     "description": "Filhote tigrada com máscara escura, linda e curiosa. Nome definitivo a definir pela ONG. Procura lar com paciência e carinho para acompanhar seu crescimento.",
     "photo": "/pets/filhote-tigrada-f.jpg",
-    "status": "available",
+    "status": "adopted",
     "featured": false
   },
   {
@@ -670,7 +670,7 @@
     "neutered": false,
     "description": "Filhote chocolate escuro, sereno e afetivo. Nome definitivo a definir pela ONG. Procura lar com paciência e carinho para acompanhar seu crescimento.",
     "photo": "/pets/filhote-chocolate-m.jpg",
-    "status": "available",
+    "status": "adopted",
     "featured": false
   },
   {
@@ -683,7 +683,7 @@
     "neutered": false,
     "description": "Filhote pretinho, esperto e brincalhão. Nome definitivo a definir pela ONG. Procura lar com paciência e carinho para acompanhar seu crescimento.",
     "photo": "/pets/filhote-preto-m.jpg",
-    "status": "available",
+    "status": "adopted",
     "featured": false
   },
   {
@@ -709,7 +709,7 @@
     "neutered": false,
     "description": "Filhote cinza esverdeado com pelagem densa — parece um lobinho em miniatura. Nome definitivo a definir pela ONG. Procura lar com paciência e carinho para acompanhar seu crescimento.",
     "photo": "/pets/filhote-lobo-m.jpg",
-    "status": "available",
+    "status": "adopted",
     "featured": false
   },
   {
