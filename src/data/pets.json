@@ -750,5 +750,16 @@
     "photo": "/pets/munchkin.jpg",
     "status": "available",
     "featured": false
+  },
+  {
+    "id": "amora",
+    "name": "Amora",
+    "species": "Cão",
+    "gender": "Fêmea",
+    "age": null,
+    "description": "Amora é branca com manchas pretas — doce por natureza, brincalhona quando ganha confiança, e um pouquinho tímida com quem não conhece ainda. Se dá muito bem com crianças e com outros cães. Está esperando por uma família que entenda o ritmo dela.",
+    "photo": "/pets/amora.jpg",
+    "status": "available",
+    "featured": false
   }
 ]
