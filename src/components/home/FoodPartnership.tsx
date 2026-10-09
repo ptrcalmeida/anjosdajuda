@@ -29,6 +29,12 @@ export default function FoodPartnership() {
               com visibilidade genuína junto a uma ONG presente há 13 anos em
               Arraial d&apos;Ajuda.
             </p>
+            <Link
+              href="/parceria"
+              className="inline-flex items-center text-sm font-semibold text-[#7E22CE] hover:underline mb-5"
+            >
+              Ver página completa de parceria →
+            </Link>
             <div className="flex flex-col sm:flex-row gap-3">
               <a
                 href="https://wa.me/5573999214880?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20doar%20ra%C3%A7%C3%A3o%20para%20a%20Anjos%20d%27Ajuda"

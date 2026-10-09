@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { PetGrid } from "@/components/pets/PetGrid";
 import petsData from "@/data/pets.json";
@@ -142,10 +143,13 @@ export default function AdotePage() {
                   <div key={pet.id} className="relative group">
                     <div className="aspect-square rounded-xl overflow-hidden bg-[#2D1A4A]">
                       {pet.photo ? (
-                        <img
+                        <Image
                           src={pet.photo}
                           alt={pet.name}
-                          className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
+                          fill
+                          className="object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
+                          sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 211px"
+                          loading="lazy"
                         />
                       ) : (
                         <div className="w-full h-full flex items-center justify-center">

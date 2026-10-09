@@ -96,6 +96,7 @@ export default function Footer() {
                 { href: "/doe", label: "Faça uma Doação" },
                 { href: "/voluntarie", label: "Voluntarie-se" },
                 { href: "/contato", label: "Contato" },
+                { href: "/parceria", label: "Parceria de Ração" },
               ].map((link) => (
                 <Link
                   key={link.href}
