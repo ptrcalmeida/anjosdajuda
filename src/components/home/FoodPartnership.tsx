@@ -10,9 +10,12 @@ export default function FoodPartnership() {
             <p className="text-xs font-semibold uppercase tracking-widest text-[#7E22CE] mb-4">
               Parceria corporativa
             </p>
-            <h2 className="text-3xl md:text-4xl font-black text-[#1A103C] leading-tight mb-5">
+            <h2 className="text-3xl md:text-4xl font-black text-[#1A103C] leading-tight mb-2">
               Sua marca alimenta<br />quem não tem voz.
             </h2>
+            <p className="text-sm text-[#7C6B8E] mb-5">
+              Parceria de doação de ração para ONG — fabricantes, distribuidores e pet shops em Arraial d&apos;Ajuda e Sul da Bahia.
+            </p>
             <p className="text-lg text-[#7C6B8E] leading-relaxed mb-4">
               Todo mês, voluntários da Anjos d&apos;Ajuda sustentam com recursos próprios
               os animais resgatados em situação de risco em Arraial d&apos;Ajuda. São cães

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 
 export const metadata: Metadata = {
-  title: "Quem Somos — Anjos d'Ajuda",
+  title: "Quem Somos — ONG Anjos d'Ajuda, Arraial d'Ajuda BA",
   description:
     "A Anjos d'Ajuda é uma ONG sem fins lucrativos fundada em 2013 em Arraial d'Ajuda, Bahia. Mais de 13 anos castrando, resgatando e encontrando lares para cães e gatos abandonados no Sul da Bahia.",
 };

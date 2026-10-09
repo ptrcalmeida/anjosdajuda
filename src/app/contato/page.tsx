@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { MapPin, Phone, Mail } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Contato — Anjos d'Ajuda",
+  title: "Contato — Anjos d'Ajuda, Arraial d'Ajuda (BA)",
   description:
     "Entre em contato com a Anjos d'Ajuda. Adoção, doação, voluntariado ou denúncia de maus-tratos — estamos no WhatsApp e por e-mail.",
 };

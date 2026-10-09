@@ -5,6 +5,7 @@ import Script from "next/script";
 export const metadata: Metadata = {
   title: "Obrigada pela sua doação — Anjos d'Ajuda",
   description: "Sua doação foi recebida. Obrigada por apoiar a Anjos d'Ajuda.",
+  robots: { index: false, follow: false },
 };
 
 export default function SucessoPage() {
