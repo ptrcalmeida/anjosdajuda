@@ -86,7 +86,7 @@
     "age": null,
     "description": "Discreta e carinhosa, Pretinha passou um bom tempo nas ruas de Arraial d'Ajuda antes de ser resgatada. Castrada e dócil, ela se adapta bem a qualquer ambiente tranquilo.",
     "photo": "/pets/pretinha.jpg",
-    "status": "available",
+    "status": "adopted",
     "featured": false
   },
   {
@@ -262,7 +262,7 @@
     "age": null,
     "description": "Dalila foi abandonada em Arraial d'Ajuda com dois filhotes — e não abandonou nenhum deles. Os filhotes já encontraram lares; agora é a vez dela. Castrada e cheia de amor pra dar.",
     "photo": "/pets/dalila.jpg",
-    "status": "available",
+    "status": "adopted",
     "featured": false
   },
   {
