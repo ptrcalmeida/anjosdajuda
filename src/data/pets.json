@@ -343,17 +343,6 @@
     "featured": false
   },
   {
-    "id": "farofa",
-    "name": "Farofa",
-    "species": "Cão",
-    "gender": "Macho",
-    "age": null,
-    "description": "Farofa é daqueles que ficam de olho em tudo, sempre curioso e pronto pra explorar. Pelagem areia, porte médio e energia de sobra — espera há tempo por uma família.",
-    "photo": "/pets/farofa.jpg",
-    "status": "available",
-    "featured": false
-  },
-  {
     "id": "bill",
     "name": "Bill",
     "species": "Cão",
@@ -457,6 +446,17 @@
     "neutered": false,
     "description": "Rosa acabou de ser mãe. Pequena, caramelo, com aquele jeito alerta de quem cuida de tudo e de todos — ela chegou com o bandana vermelho e conquistou todo mundo na hora. Agora que seus filhotes estão sendo cuidados, é a vez dela encontrar um lar à altura de tanta dedicação.",
     "photo": "/pets/rosa.jpg",
+    "status": "available",
+    "featured": true
+  },
+  {
+    "id": "farofa",
+    "name": "Farofa",
+    "species": "Cão",
+    "gender": "Fêmea",
+    "age": null,
+    "description": "Farofa é uma aventureira de coração. Sempre curiosa, adora farejar cada canto e explorar tudo ao redor. Ideal para uma casa com quintal ou um pequeno terreno — precisa de espaço pra ser feliz do jeito dela. Pelagem areia, porte médio, energia e lealdade de sobra.",
+    "photo": "/pets/farofa.jpg",
     "status": "available",
     "featured": true
   },
