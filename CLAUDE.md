@@ -21,8 +21,8 @@ Stack: Next.js 16.2.1 + TypeScript + Tailwind CSS v4 + Stripe.
 - `status` values: `"available"` | `"adopted"` | `"fostered"` — only `"available"` shows in gallery
 - `neutered: false` shows "✓ Vacinado · Castração pendente" badge instead of "✓ Castrado · Vacinado"
 - `age_label` overrides the age number display (e.g. "2 meses", "filhote")
-- 65 pets in pets.json (2026-10-05), 31 available. Recent additions: Amora (fêmea, 1 ano, castrada, branca com manchas pretas, boa com crianças e outros cães). Recently adopted: Nala + 6 litter puppies (2026-10-05), Rapunzel (2026-08-20), Ursa + Pimenta (2026-08-02). Earlier: Lobinho, Pérola, Carambola, Coco, Açafrão, Âmbar, Fumaça, Pitanga, Tinta, Noite, Sombra, Flocos, Preta x2. Bento & Faísca → adopted (2026-06-22)
-- FeaturedPets shows first 3 pets with `featured: true && status: "available"` in file order — currently Barão, Forte, Rosa
+- 65 pets in pets.json (2026-11-10), 28 available. Recently adopted: Amora (2026-11-10), Dalila + Pretinha + gatos filhotes (2026-10-09), Nala + 6 litter puppies (2026-10-05), Rapunzel (2026-08-20), Ursa + Pimenta (2026-08-02). Earlier: Lobinho, Pérola, Carambola, Coco, Açafrão, Âmbar, Fumaça, Pitanga, Tinta, Noite, Sombra, Flocos, Preta x2. Bento & Faísca → adopted (2026-06-22). Rosa renamed to Maggie.
+- FeaturedPets shows first 3 pets with `featured: true && status: "available"` in file order — currently Barão, Maggie, Esperança
 - Filhotes share group photo until individual photos are available — update photo field when new shots come in
 - Pet photos served from: `public/pets/`
 - Story/ONG photos served from: `public/story/`
@@ -32,14 +32,16 @@ Stack: Next.js 16.2.1 + TypeScript + Tailwind CSS v4 + Stripe.
 ## Key files
 - `src/app/page.tsx` — homepage sections order: Hero → FeaturedPets → Stats → MissionPillars → ImpactChain → RescueHighlight → FoodPartnership → Testimonial → FinalCTA
 - `src/app/doe/page.tsx` — donation page (Stripe widget + PIX + IBAN)
+- `src/app/doe/sucesso/page.tsx` — donation success page (noindex, conversion tracking fires here)
 - `src/app/sobre/page.tsx` — about page. Sections: Lead → Foto → Fundadora → Stats → O que fazemos → Transparência → FEBRACA → 2026 Pattern → CTA
-- `src/app/adote/page.tsx` — adoption gallery + adopted pets section (700+ stat)
+- `src/app/adote/page.tsx` — adoption gallery + adopted pets section (700+ stat); uses next/image for adopted pets grid
+- `src/app/parceria/page.tsx` — B2B food/ração partnership page (created 2026-10-09, SEO targeting fabricantes/distribuidores/pet shops)
 - `src/app/api/checkout/route.ts` — Stripe Checkout Session API route
 - `src/components/ui/DonationWidget.tsx` — client donation widget
 - `src/components/layout/Header.tsx` — sticky nav, text logo "ONG Anjos d'Ajuda", includes UrgencyBar
 - `src/components/layout/UrgencyBar.tsx` — orange urgency strip above header (fully evergreen — auto-generates month from JS Date, auto-rotates localStorage key by year+month, no manual updates needed)
-- `src/components/layout/Footer.tsx` — footer with social links + FEBRACA SELO badge (public/story/febraca-selo.png)
-- `src/components/home/FoodPartnership.tsx` — corporate food donation section
+- `src/components/layout/Footer.tsx` — footer with social links + FEBRACA SELO badge (public/story/febraca-selo.png); includes Parceria de Ração nav link
+- `src/components/home/FoodPartnership.tsx` — corporate food donation section; has keyword subtitle + /parceria link
 - `src/components/home/Testimonial.tsx` — 3-column testimonials (Patricia E. de Almeida · Voluntária Médica Veterinária + 2 anônimos)
 - `src/components/pets/AdoptButton.tsx` — opens WhatsApp with pre-filled "Quero adotar [Nome]" message + Google Ads conversion tracking
 - `src/components/pets/ExpandableDescription.tsx` — client component for line-clamp-3 + "Ler mais" toggle
@@ -88,12 +90,23 @@ Stack: Next.js 16.2.1 + TypeScript + Tailwind CSS v4 + Stripe.
 - Budget: R$329/day (Ad Grants limit)
 
 ## SEO implemented
-- Schema.org: NGO + nonprofitStatus + areaServed + DonateAction (/doe) + FAQPage (/adote)
+- Schema.org: NGO + nonprofitStatus + areaServed + DonateAction (/doe) + FAQPage (/adote) + Demand seeks (/parceria)
 - Physical address removed from all pages and schema — only city/state shown
-- sitemap.ts + robots.ts in place
+- sitemap.ts + robots.ts in place (sitemap has static lastModified dates per page, not new Date())
 - Hero H1 has sr-only location keyword appended
 - /adote H1: "Adote um cão ou gato em Arraial d'Ajuda"
-- Keywords for food/ração corporate partnerships in layout.tsx
+- /sobre title: "Quem Somos — ONG Anjos d'Ajuda, Arraial d'Ajuda BA"
+- /contato title: "Contato — Anjos d'Ajuda, Arraial d'Ajuda (BA)"
+- /doe/sucesso: noindex, nofollow (conversion page, not meant for search)
+- Keywords for food/ração corporate partnerships in layout.tsx + FoodPartnership.tsx subtitle
+- /parceria page: full B2B landing page for pet food company partnerships
+
+## Performance
+- next.config.ts: images.formats = ["image/avif", "image/webp"]
+- /adote adopted pets section uses next/image (fill + sizes + lazy) — fixed 3MB+ raw img tags
+- Lighthouse /adote: Performance 85, LCP 3.2s, FCP 2.3s (post-fix 2026-10-09)
+- Main remaining weight: GTM (176KB) + Ads tag (152KB) — not reducible without removing tracking
+- Vercel redirect (anjosdajuda.org → www): fix via Vercel Dashboard → Settings → Domains → set primary
 
 ## Favicon
 - `src/app/icon.svg` — paw print, navy background + light purple (#C084FC)

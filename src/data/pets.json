@@ -468,8 +468,8 @@
     "age": 1,
     "description": "Amora é branca com manchas pretas — doce por natureza, brincalhona quando ganha confiança, e um pouquinho tímida com quem não conhece ainda. Se dá muito bem com crianças e com outros cães. Está esperando por uma família que entenda o ritmo dela.",
     "photo": "/pets/amora.jpg",
-    "status": "available",
-    "featured": true,
+    "status": "adopted",
+    "featured": false,
     "neutered": true
   },
   {
@@ -760,6 +760,19 @@
     "neutered": false,
     "description": "Munchkin é porte médio, tricolor — preta, caramelo e branco — com aquele olhar atento de quem está descobrindo o mundo. 3 meses, vacinada e vermifugada. Irmã da Bibi: podem ser adotadas juntas ou separadas.",
     "photo": "/pets/munchkin.jpg",
+    "status": "available",
+    "featured": false
+  },
+  {
+    "id": "margarida",
+    "name": "Margarida",
+    "species": "Cão",
+    "gender": "Fêmea",
+    "age": null,
+    "age_label": "7 meses",
+    "neutered": true,
+    "description": "Margarida é pequena de tamanho mas enorme de coração. Com apenas 7 meses, já aprendeu que o lugar mais gostoso do mundo é o colo de alguém. Brincalhona e carinhosa, ela ama todo mundo — pessoas, outros bichos, qualquer criatura que apareça. Está vacinada, castrada e saudável, pronta pra encher uma nova família de amor.",
+    "photo": "/pets/margarida.jpg",
     "status": "available",
     "featured": false
   }
