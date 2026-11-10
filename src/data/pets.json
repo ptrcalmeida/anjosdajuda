@@ -573,8 +573,8 @@
     "neutered": false,
     "description": "Preta do focinho à pata, Esperança chegou ao mundo há apenas 4 semanas — e já olha para tudo com aquela curiosidade de quem tem uma vida inteira pela frente. Chihuahua mix, pequenininha e cheia de personalidade. Precisa de um lar que acompanhe esse crescimento com paciência e muito amor.",
     "photo": "/pets/esperanca.jpg",
-    "status": "available",
-    "featured": true
+    "status": "adopted",
+    "featured": false
   },
   {
     "id": "gengibre",
@@ -584,7 +584,7 @@
     "age": null,
     "description": "Ruiva, jovem e com aquela língua de fora que já diz tudo. Gengibre chegou magra e saiu sorrindo — literalmente. É daquelas que enchem qualquer ambiente de energia boa sem nem tentar. Dócil, castrada e pronta pra embarcar na vida ao lado de quem mereça.",
     "photo": "/pets/gengibre.jpg",
-    "status": "available",
+    "status": "adopted",
     "featured": false
   },
   {
@@ -734,7 +734,7 @@
     "neutered": false,
     "description": "Mel é caramelo do focinho à pata — e doce do mesmo jeito. Já está vacinada, vermifugada e com controle de ectoparasitas. Elegante e curiosa, ela levanta o queixo para o mundo como quem sabe que merece um lar à altura.",
     "photo": "/pets/mel.jpg",
-    "status": "available",
+    "status": "adopted",
     "featured": false
   },
   {
@@ -747,7 +747,7 @@
     "neutered": false,
     "description": "Bibi é a menor das duas irmãs — porte pequeno, mas personalidade grande. Preta com detalhes caramelo, 3 meses, vacinada e vermifugada. Pode ser adotada com a irmã Munchkin ou separada.",
     "photo": "/pets/bibi.jpg",
-    "status": "available",
+    "status": "adopted",
     "featured": false
   },
   {
@@ -760,7 +760,7 @@
     "neutered": false,
     "description": "Munchkin é porte médio, tricolor — preta, caramelo e branco — com aquele olhar atento de quem está descobrindo o mundo. 3 meses, vacinada e vermifugada. Irmã da Bibi: podem ser adotadas juntas ou separadas.",
     "photo": "/pets/munchkin.jpg",
-    "status": "available",
+    "status": "adopted",
     "featured": false
   },
   {
