@@ -1,5 +1,41 @@
 [
   {
+    "id": "farofa",
+    "name": "Farofa",
+    "species": "Cão",
+    "gender": "Fêmea",
+    "age": null,
+    "description": "Farofa é uma aventureira de coração. Sempre curiosa, adora farejar cada canto e explorar tudo ao redor. Ideal para uma casa com quintal ou um pequeno terreno — precisa de espaço pra ser feliz do jeito dela. Pelagem areia, porte médio, energia e lealdade de sobra.",
+    "photo": "/pets/farofa.jpg",
+    "status": "available",
+    "featured": true
+  },
+  {
+    "id": "maggie",
+    "name": "Maggie",
+    "species": "Cão",
+    "gender": "Fêmea",
+    "age": null,
+    "neutered": false,
+    "description": "Rosa acabou de ser mãe. Pequena, caramelo, com aquele jeito alerta de quem cuida de tudo e de todos — ela chegou com o bandana vermelho e conquistou todo mundo na hora. Agora que seus filhotes estão sendo cuidados, é a vez dela encontrar um lar à altura de tanta dedicação.",
+    "photo": "/pets/rosa.jpg",
+    "status": "available",
+    "featured": true
+  },
+  {
+    "id": "margarida",
+    "name": "Margarida",
+    "species": "Cão",
+    "gender": "Fêmea",
+    "age": null,
+    "age_label": "7 meses",
+    "neutered": true,
+    "description": "Margarida é pequena de tamanho mas enorme de coração. Com apenas 7 meses, já aprendeu que o lugar mais gostoso do mundo é o colo de alguém. Brincalhona e carinhosa, ela ama todo mundo — pessoas, outros bichos, qualquer criatura que apareça. Está vacinada, castrada e saudável, pronta pra encher uma nova família de amor.",
+    "photo": "/pets/margarida.jpg",
+    "status": "available",
+    "featured": true
+  },
+  {
     "id": "lobinho",
     "name": "Lobinho",
     "species": "Cão",
@@ -21,7 +57,7 @@
     "description": "Barão chegou das ruas de Arraial d'Ajuda com um sorriso que não engana ninguém. Dócil, castrado e cheio de alegria, ele faz amizade em segundos.",
     "photo": "/pets/cara.jpg",
     "status": "available",
-    "featured": true
+    "featured": false
   },
   {
     "id": "golden",
@@ -208,7 +244,7 @@
     "description": "Maria foi encontrada num terreno abandonado, quase sem forças, perto do limite entre a vida e o que vem depois. Quem a viu naquele dia não imaginava que esse pelo ruivo e farto voltaria a brilhar. Mas ela voltou. Das ruas de Arraial d'Ajuda pra um lar que mereça toda essa resiliência. Castrada.",
     "photo": "/pets/maria.jpg",
     "status": "adopted",
-    "featured": true
+    "featured": false
   },
   {
     "id": "trovao",
@@ -438,29 +474,6 @@
     "featured": false
   },
   {
-    "id": "maggie",
-    "name": "Maggie",
-    "species": "Cão",
-    "gender": "Fêmea",
-    "age": null,
-    "neutered": false,
-    "description": "Rosa acabou de ser mãe. Pequena, caramelo, com aquele jeito alerta de quem cuida de tudo e de todos — ela chegou com o bandana vermelho e conquistou todo mundo na hora. Agora que seus filhotes estão sendo cuidados, é a vez dela encontrar um lar à altura de tanta dedicação.",
-    "photo": "/pets/rosa.jpg",
-    "status": "available",
-    "featured": true
-  },
-  {
-    "id": "farofa",
-    "name": "Farofa",
-    "species": "Cão",
-    "gender": "Fêmea",
-    "age": null,
-    "description": "Farofa é uma aventureira de coração. Sempre curiosa, adora farejar cada canto e explorar tudo ao redor. Ideal para uma casa com quintal ou um pequeno terreno — precisa de espaço pra ser feliz do jeito dela. Pelagem areia, porte médio, energia e lealdade de sobra.",
-    "photo": "/pets/farofa.jpg",
-    "status": "available",
-    "featured": true
-  },
-  {
     "id": "amora",
     "name": "Amora",
     "species": "Cão",
@@ -596,7 +609,7 @@
     "description": "Nina tem 8 anos e uma história que exige respeito. Atropelada em fevereiro, passou por cirurgias e se recuperou com a força de quem sabe que ainda tem muito pra viver. Pastor alemão de porte nobre e olhar sereno — ela não precisa de muito, só de um lar à altura da sua lealdade.",
     "photo": "/pets/nina.jpg",
     "status": "available",
-    "featured": true
+    "featured": false
   },
   {
     "id": "flocos",
@@ -761,19 +774,6 @@
     "description": "Munchkin é porte médio, tricolor — preta, caramelo e branco — com aquele olhar atento de quem está descobrindo o mundo. 3 meses, vacinada e vermifugada. Irmã da Bibi: podem ser adotadas juntas ou separadas.",
     "photo": "/pets/munchkin.jpg",
     "status": "adopted",
-    "featured": false
-  },
-  {
-    "id": "margarida",
-    "name": "Margarida",
-    "species": "Cão",
-    "gender": "Fêmea",
-    "age": null,
-    "age_label": "7 meses",
-    "neutered": true,
-    "description": "Margarida é pequena de tamanho mas enorme de coração. Com apenas 7 meses, já aprendeu que o lugar mais gostoso do mundo é o colo de alguém. Brincalhona e carinhosa, ela ama todo mundo — pessoas, outros bichos, qualquer criatura que apareça. Está vacinada, castrada e saudável, pronta pra encher uma nova família de amor.",
-    "photo": "/pets/margarida.jpg",
-    "status": "available",
     "featured": false
   }
 ]
